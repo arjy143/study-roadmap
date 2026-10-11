@@ -1,0 +1,29 @@
+name: Daily reminder
+
+on:
+  schedule:
+    # 06:12 UTC = 07:12 in summer (BST), 06:12 in winter (GMT).
+    # GitHub may run scheduled jobs a few minutes late.
+    - cron: "12 6 * * *"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Override date (YYYY-MM-DD) for testing"
+        required: false
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/github-script@v7
+        env:
+          FORCE_DATE: ${{ github.event.inputs.date }}
+        with:
+          script: |
+            const run = require('./.github/scripts/daily.js');
+            await run({ github, context, core });

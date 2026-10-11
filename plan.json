@@ -1,0 +1,2721 @@
+{
+ "title": "Study roadmap",
+ "start": "2026-10-11",
+ "end": "2027-01-10",
+ "target": "2027-10-11",
+ "phases": [
+  {
+   "n": 1,
+   "name": "Foundations",
+   "months": "1–3",
+   "summary": "Measurement rig, memory & CPU fundamentals, modern C++, ~90 algorithm problems, both forks sampled."
+  },
+  {
+   "n": 2,
+   "name": "Build",
+   "months": "4–8",
+   "summary": "Coming next: the flagship project or open-source work."
+  },
+  {
+   "n": 3,
+   "name": "Convert",
+   "months": "9–11",
+   "summary": "Harder algorithms, domain prep, mocks, publish."
+  },
+  {
+   "n": 4,
+   "name": "Apply",
+   "months": "12",
+   "summary": "Second-choice firms first."
+  }
+ ],
+ "weeks": [
+  {
+   "n": 1,
+   "start": "2026-10-12",
+   "theme": "Measurement rig",
+   "goal": "A quiet, repeatable benchmarking setup and a known noise floor.",
+   "phase": 1
+  },
+  {
+   "n": 2,
+   "start": "2026-10-19",
+   "theme": "Memory hierarchy",
+   "goal": "Measured L1/L2/L3/DRAM latencies and bandwidth on your own machine.",
+   "phase": 1
+  },
+  {
+   "n": 3,
+   "start": "2026-10-26",
+   "theme": "Cache lines & false sharing",
+   "goal": "Prove false sharing and data-layout effects with your own numbers.",
+   "phase": 1
+  },
+  {
+   "n": 4,
+   "start": "2026-11-02",
+   "theme": "Branches & IPC",
+   "goal": "Understand and measure branch misprediction; read perf record output fluently.",
+   "phase": 1
+  },
+  {
+   "n": 5,
+   "start": "2026-11-09",
+   "theme": "Syscalls, TLB & allocation",
+   "goal": "Know what a syscall, a TLB miss and an allocation cost — measured, not quoted.",
+   "phase": 1
+  },
+  {
+   "n": 6,
+   "start": "2026-11-16",
+   "theme": "Sampling week A — trading",
+   "goal": "Taste low-latency trading: a correct toy order book. Notice how much you enjoy it.",
+   "phase": 1
+  },
+  {
+   "n": 7,
+   "start": "2026-11-23",
+   "theme": "Sampling week B — GPU",
+   "goal": "Taste GPU work: naive vs tiled matmul vs cuBLAS. Compare enjoyment with week A.",
+   "phase": 1
+  },
+  {
+   "n": 8,
+   "start": "2026-11-30",
+   "theme": "Memory model & lock-free",
+   "goal": "A correct, measured SPSC ring buffer — useful in both forks.",
+   "phase": 1
+  },
+  {
+   "n": 9,
+   "start": "2026-12-07",
+   "theme": "SIMD & optimising code",
+   "goal": "Read compiler output; know when auto-vectorisation works and when to hand-roll.",
+   "phase": 1
+  },
+  {
+   "n": 10,
+   "start": "2026-12-14",
+   "theme": "Profiling methodology",
+   "goal": "Top-down analysis on your own code, and a first fix driven by measurement.",
+   "phase": 1
+  },
+  {
+   "n": 11,
+   "start": "2026-12-21",
+   "theme": "Christmas — light week",
+   "goal": "Keep the habit alive; rest properly.",
+   "phase": 1
+  },
+  {
+   "n": 12,
+   "start": "2026-12-28",
+   "theme": "New Year — consolidate",
+   "goal": "Spaced repetition on everything you missed; publish writeup #1.",
+   "phase": 1
+  },
+  {
+   "n": 13,
+   "start": "2027-01-04",
+   "theme": "Phase 1 checkpoint",
+   "goal": "~90 problems, a full numbers table, one published writeup, a leaning between the forks.",
+   "phase": 1
+  }
+ ],
+ "days": {
+  "2026-10-11": {
+   "week": 0,
+   "focus": "Orientation",
+   "tasks": [
+    {
+     "slot": "home",
+     "kind": "admin",
+     "title": "Bookmark this site on your phone and laptop",
+     "mins": 5,
+     "id": "2026-10-11-0"
+    },
+    {
+     "slot": "home",
+     "kind": "admin",
+     "title": "Check GitHub notification emails are on, and watch the study-roadmap repo",
+     "mins": 5,
+     "detail": "Settings → Notifications → Email. The daily reminder arrives as a GitHub issue assigned to you.",
+     "id": "2026-10-11-1"
+    },
+    {
+     "slot": "home",
+     "kind": "admin",
+     "title": "Order Effective Modern C++; print Bakhvalov Ch. 1–2",
+     "mins": 10,
+     "link": "https://github.com/dendibakh/perf-book",
+     "id": "2026-10-11-2"
+    },
+    {
+     "slot": "home",
+     "kind": "admin",
+     "title": "Start your miss log and achievements log (a notes app or a private doc)",
+     "mins": 10,
+     "detail": "Achievements log: work wins with numbers attached, written while fresh.",
+     "id": "2026-10-11-3"
+    }
+   ]
+  },
+  "2026-10-12": {
+   "week": 1,
+   "focus": "Measurement rig",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Effective Modern C++ — Items 1–4 (type deduction)",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "id": "2026-10-12-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Arrays & Hashing: solve 2 new problems",
+     "mins": 60,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 2,
+     "fresh": true,
+     "id": "2026-10-12-1"
+    },
+    {
+     "slot": "home",
+     "kind": "review",
+     "title": "Review last week's misses; re-solve one from memory",
+     "mins": 15,
+     "id": "2026-10-12-2"
+    }
+   ]
+  },
+  "2026-10-13": {
+   "week": 1,
+   "focus": "Measurement rig",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Effective Modern C++ — Items 5–6 (auto)",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "id": "2026-10-13-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Arrays & Hashing: solve 2 new problems",
+     "mins": 45,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 2,
+     "fresh": true,
+     "id": "2026-10-13-1"
+    },
+    {
+     "slot": "home",
+     "kind": "build",
+     "title": "Install the toolchain: perf, Google Benchmark, CMake; build a Release -O2 -g template project",
+     "mins": 45,
+     "detail": "Personal machine only. A Linux box (or WSL2 if you must — note perf counters are limited there).",
+     "link": "https://github.com/google/benchmark",
+     "id": "2026-10-13-2"
+    }
+   ]
+  },
+  "2026-10-14": {
+   "week": 1,
+   "focus": "Measurement rig",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Effective Modern C++ — Items 7–10 (braces, nullptr, aliases, enums)",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "id": "2026-10-14-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Arrays & Hashing: solve 2 new problems",
+     "mins": 60,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 2,
+     "fresh": true,
+     "id": "2026-10-14-1"
+    },
+    {
+     "slot": "home",
+     "kind": "review",
+     "title": "Spaced repetition: re-solve one earlier miss",
+     "mins": 15,
+     "id": "2026-10-14-2"
+    }
+   ]
+  },
+  "2026-10-15": {
+   "week": 1,
+   "focus": "Measurement rig",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Effective Modern C++ — Items 11–14 (deleted fns, override, const_iterator, noexcept)",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "id": "2026-10-15-0"
+    },
+    {
+     "slot": "home",
+     "kind": "build",
+     "title": "Stabilise measurements: taskset pinning, disable turbo/frequency scaling, find your noise floor",
+     "mins": 45,
+     "detail": "Run an empty benchmark 30 times; record min/median/max. That spread is your noise floor — any 'improvement' smaller than it is noise.",
+     "link": "https://www.brendangregg.com/perf.html",
+     "id": "2026-10-15-1"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Arrays & Hashing: solve 1 new problem",
+     "mins": 30,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2026-10-15-2"
+    }
+   ]
+  },
+  "2026-10-16": {
+   "week": 1,
+   "focus": "Measurement rig",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Bakhvalov, Performance Analysis & Tuning — Ch. 1–2 (measuring performance)",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "link": "https://github.com/dendibakh/perf-book",
+     "id": "2026-10-16-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Arrays & Hashing: solve 1 new problem",
+     "mins": 30,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2026-10-16-1"
+    },
+    {
+     "slot": "home",
+     "kind": "people",
+     "title": "Join the C++ London meetup and #include <C++>; note the next meetup date",
+     "mins": 30,
+     "detail": "Also draft how you'll ask your manager for an hour a day of structured learning — raise it at your next 1:1.",
+     "link": "https://www.meetup.com/cpplondon/",
+     "id": "2026-10-16-2"
+    }
+   ]
+  },
+  "2026-10-17": {
+   "week": 1,
+   "focus": "Measurement rig",
+   "tasks": [
+    {
+     "slot": "weekend",
+     "kind": "build",
+     "title": "Turn the template into a reusable bench repo: run script with pinning, records CPU model, kernel, compiler & flags with every result",
+     "mins": 120,
+     "detail": "Keep it private for now. This rig is what everything else in the year stands on.",
+     "id": "2026-10-17-0"
+    }
+   ]
+  },
+  "2026-10-18": {
+   "week": 1,
+   "focus": "Measurement rig",
+   "tasks": [
+    {
+     "slot": "weekend",
+     "kind": "build",
+     "title": "perf stat on a toy program — read cycles, instructions, IPC, cache-misses",
+     "mins": 60,
+     "link": "https://www.brendangregg.com/perf.html",
+     "id": "2026-10-18-0"
+    },
+    {
+     "slot": "weekend",
+     "kind": "algo",
+     "title": "Arrays & Hashing: solve 1 new problem",
+     "mins": 45,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2026-10-18-1"
+    },
+    {
+     "slot": "weekend",
+     "kind": "review",
+     "title": "Weekly review: tick-off rate, hours, what to change next week",
+     "mins": 15,
+     "id": "2026-10-18-2"
+    }
+   ]
+  },
+  "2026-10-19": {
+   "week": 2,
+   "focus": "Memory hierarchy",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Effective Modern C++ — Items 15–17 (constexpr, const member fns, special members)",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "id": "2026-10-19-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Two Pointers → Sliding Window: solve 2 new problems",
+     "mins": 60,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 2,
+     "fresh": true,
+     "id": "2026-10-19-1"
+    },
+    {
+     "slot": "home",
+     "kind": "review",
+     "title": "Review last week's misses; re-solve one from memory",
+     "mins": 15,
+     "id": "2026-10-19-2"
+    }
+   ]
+  },
+  "2026-10-20": {
+   "week": 2,
+   "focus": "Memory hierarchy",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Effective Modern C++ — Items 18–22 (smart pointers, pimpl)",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "id": "2026-10-20-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Two Pointers → Sliding Window: solve 2 new problems",
+     "mins": 45,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 2,
+     "fresh": true,
+     "id": "2026-10-20-1"
+    },
+    {
+     "slot": "home",
+     "kind": "build",
+     "title": "Pointer-chasing latency benchmark: random cyclic list over working sets from 4 KB to 256 MB",
+     "mins": 45,
+     "id": "2026-10-20-2"
+    }
+   ]
+  },
+  "2026-10-21": {
+   "week": 2,
+   "focus": "Memory hierarchy",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Drepper, What Every Programmer Should Know About Memory — §2 (RAM)",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "link": "https://people.freebsd.org/~lstewart/articles/cpumemory.pdf",
+     "id": "2026-10-21-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Two Pointers → Sliding Window: solve 1 new problem",
+     "mins": 60,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2026-10-21-1"
+    },
+    {
+     "slot": "home",
+     "kind": "review",
+     "title": "Spaced repetition: re-solve one earlier miss",
+     "mins": 15,
+     "id": "2026-10-21-2"
+    }
+   ]
+  },
+  "2026-10-22": {
+   "week": 2,
+   "focus": "Memory hierarchy",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Drepper — §3 (CPU caches)",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "link": "https://people.freebsd.org/~lstewart/articles/cpumemory.pdf",
+     "id": "2026-10-22-0"
+    },
+    {
+     "slot": "home",
+     "kind": "build",
+     "title": "Plot latency vs working-set size; mark the L1/L2/L3/DRAM steps and compare with lscpu",
+     "mins": 45,
+     "detail": "Write the numbers into your log. These are your answers to every 'how expensive is a cache miss' question.",
+     "id": "2026-10-22-1"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Two Pointers → Sliding Window: solve 1 new problem",
+     "mins": 30,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2026-10-22-2"
+    }
+   ]
+  },
+  "2026-10-23": {
+   "week": 2,
+   "focus": "Memory hierarchy",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Bakhvalov — CPU microarchitecture chapter",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "link": "https://github.com/dendibakh/perf-book",
+     "id": "2026-10-23-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Two Pointers → Sliding Window: solve 1 new problem",
+     "mins": 30,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2026-10-23-1"
+    },
+    {
+     "slot": "home",
+     "kind": "people",
+     "title": "Check your employer's policy on publishing, conference talks and open source",
+     "mins": 30,
+     "detail": "Note what needs sign-off and who approves it. Do this before you publish anything under your own name.",
+     "id": "2026-10-23-2"
+    }
+   ]
+  },
+  "2026-10-24": {
+   "week": 2,
+   "focus": "Memory hierarchy",
+   "tasks": [
+    {
+     "slot": "weekend",
+     "kind": "build",
+     "title": "Bandwidth & stride: sequential vs random vs strided (1, 16, 64, 4096 bytes) access",
+     "mins": 120,
+     "detail": "Explain each result in a sentence. Prefetcher, cache line, page — which one is each curve showing?",
+     "id": "2026-10-24-0"
+    }
+   ]
+  },
+  "2026-10-25": {
+   "week": 2,
+   "focus": "Memory hierarchy",
+   "tasks": [
+    {
+     "slot": "weekend",
+     "kind": "build",
+     "title": "Write a private note 'My machine's memory numbers' with the table",
+     "mins": 60,
+     "id": "2026-10-25-0"
+    },
+    {
+     "slot": "weekend",
+     "kind": "algo",
+     "title": "Two Pointers → Sliding Window: solve 1 new problem",
+     "mins": 45,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2026-10-25-1"
+    },
+    {
+     "slot": "weekend",
+     "kind": "review",
+     "title": "Weekly review: tick-off rate, hours, what to change next week",
+     "mins": 15,
+     "id": "2026-10-25-2"
+    }
+   ]
+  },
+  "2026-10-26": {
+   "week": 3,
+   "focus": "Cache lines & false sharing",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Effective Modern C++ — Items 23–26 (move, forward, universal references)",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "id": "2026-10-26-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Sliding Window → Stack: solve 2 new problems",
+     "mins": 60,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 2,
+     "fresh": true,
+     "id": "2026-10-26-1"
+    },
+    {
+     "slot": "home",
+     "kind": "review",
+     "title": "Review last week's misses; re-solve one from memory",
+     "mins": 15,
+     "id": "2026-10-26-2"
+    }
+   ]
+  },
+  "2026-10-27": {
+   "week": 3,
+   "focus": "Cache lines & false sharing",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Effective Modern C++ — Items 27–30 (overloading on universal refs, perfect forwarding)",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "id": "2026-10-27-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Sliding Window → Stack: solve 2 new problems",
+     "mins": 45,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 2,
+     "fresh": true,
+     "id": "2026-10-27-1"
+    },
+    {
+     "slot": "home",
+     "kind": "build",
+     "title": "False sharing: two threads incrementing adjacent counters vs alignas(64) counters",
+     "mins": 45,
+     "id": "2026-10-27-2"
+    }
+   ]
+  },
+  "2026-10-28": {
+   "week": 3,
+   "focus": "Cache lines & false sharing",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Drepper — §6.4 (multi-thread optimisations)",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "link": "https://people.freebsd.org/~lstewart/articles/cpumemory.pdf",
+     "id": "2026-10-28-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Sliding Window → Stack: solve 2 new problems",
+     "mins": 60,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 2,
+     "fresh": true,
+     "id": "2026-10-28-1"
+    },
+    {
+     "slot": "home",
+     "kind": "review",
+     "title": "Spaced repetition: re-solve one earlier miss",
+     "mins": 15,
+     "id": "2026-10-28-2"
+    }
+   ]
+  },
+  "2026-10-29": {
+   "week": 3,
+   "focus": "Cache lines & false sharing",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Preshing — An Introduction to Lock-Free Programming + Memory Ordering at Compile Time",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "link": "https://preshing.com/20120612/an-introduction-to-lock-free-programming/",
+     "id": "2026-10-29-0"
+    },
+    {
+     "slot": "home",
+     "kind": "build",
+     "title": "Scale 1→N threads and confirm with perf c2c or cache-miss counters; record numbers",
+     "mins": 45,
+     "link": "https://www.brendangregg.com/perf.html",
+     "id": "2026-10-29-1"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Sliding Window → Stack: solve 1 new problem",
+     "mins": 30,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2026-10-29-2"
+    }
+   ]
+  },
+  "2026-10-30": {
+   "week": 3,
+   "focus": "Cache lines & false sharing",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Bakhvalov — terminology & metrics chapter",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "link": "https://github.com/dendibakh/perf-book",
+     "id": "2026-10-30-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Sliding Window → Stack: solve 1 new problem",
+     "mins": 30,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2026-10-30-1"
+    },
+    {
+     "slot": "home",
+     "kind": "people",
+     "title": "Register for the next C++ London meetup; get on 3–4 firm-hosted tech-talk mailing lists",
+     "mins": 30,
+     "detail": "Firm events are free and the room is full of future interviewers.",
+     "link": "https://www.meetup.com/cpplondon/",
+     "id": "2026-10-30-2"
+    }
+   ]
+  },
+  "2026-10-31": {
+   "week": 3,
+   "focus": "Cache lines & false sharing",
+   "tasks": [
+    {
+     "slot": "weekend",
+     "kind": "build",
+     "title": "AoS vs SoA: sum one field across 10M structs; vary struct size; measure",
+     "mins": 120,
+     "id": "2026-10-31-0"
+    }
+   ]
+  },
+  "2026-11-01": {
+   "week": 3,
+   "focus": "Cache lines & false sharing",
+   "tasks": [
+    {
+     "slot": "weekend",
+     "kind": "build",
+     "title": "Add the false-sharing and AoS/SoA results to your numbers note",
+     "mins": 60,
+     "id": "2026-11-01-0"
+    },
+    {
+     "slot": "weekend",
+     "kind": "algo",
+     "title": "Sliding Window → Stack: solve 1 new problem",
+     "mins": 45,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2026-11-01-1"
+    },
+    {
+     "slot": "weekend",
+     "kind": "review",
+     "title": "Weekly review: tick-off rate, hours, what to change next week",
+     "mins": 15,
+     "id": "2026-11-01-2"
+    }
+   ]
+  },
+  "2026-11-02": {
+   "week": 4,
+   "focus": "Branches & IPC",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Effective Modern C++ — Items 31–34 (lambdas)",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "id": "2026-11-02-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Stack → Binary Search: solve 2 new problems",
+     "mins": 60,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 2,
+     "fresh": true,
+     "id": "2026-11-02-1"
+    },
+    {
+     "slot": "home",
+     "kind": "review",
+     "title": "Review last week's misses; re-solve one from memory",
+     "mins": 15,
+     "id": "2026-11-02-2"
+    }
+   ]
+  },
+  "2026-11-03": {
+   "week": 4,
+   "focus": "Branches & IPC",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Effective Modern C++ — Items 35–37 (threads, async, joinability)",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "id": "2026-11-03-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Stack → Binary Search: solve 2 new problems",
+     "mins": 45,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 2,
+     "fresh": true,
+     "id": "2026-11-03-1"
+    },
+    {
+     "slot": "home",
+     "kind": "build",
+     "title": "Branch misprediction: sum values above a threshold, sorted vs unsorted input; perf stat -e branch-misses",
+     "mins": 45,
+     "id": "2026-11-03-2"
+    }
+   ]
+  },
+  "2026-11-04": {
+   "week": 4,
+   "focus": "Branches & IPC",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Effective Modern C++ — Items 38–40 (futures, condvars, atomic vs volatile)",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "id": "2026-11-04-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Stack → Binary Search: solve 2 new problems",
+     "mins": 60,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 2,
+     "fresh": true,
+     "id": "2026-11-04-1"
+    },
+    {
+     "slot": "home",
+     "kind": "review",
+     "title": "Spaced repetition: re-solve one earlier miss",
+     "mins": 15,
+     "id": "2026-11-04-2"
+    }
+   ]
+  },
+  "2026-11-05": {
+   "week": 4,
+   "focus": "Branches & IPC",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Bakhvalov — 'power tools' / profiling chapter (sampling, perf record)",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "link": "https://github.com/dendibakh/perf-book",
+     "id": "2026-11-05-0"
+    },
+    {
+     "slot": "home",
+     "kind": "build",
+     "title": "Make it branchless; compare timings and read the asm in Compiler Explorer",
+     "mins": 45,
+     "link": "https://godbolt.org",
+     "id": "2026-11-05-1"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Stack → Binary Search: solve 1 new problem",
+     "mins": 30,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2026-11-05-2"
+    }
+   ]
+  },
+  "2026-11-06": {
+   "week": 4,
+   "focus": "Branches & IPC",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Agner Fog, Optimizing software in C++ — branch prediction & jump sections",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "link": "https://www.agner.org/optimize/",
+     "id": "2026-11-06-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Stack → Binary Search: solve 1 new problem",
+     "mins": 30,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2026-11-06-1"
+    },
+    {
+     "slot": "home",
+     "kind": "people",
+     "title": "ADC (9–11 Nov, Bristol) is next week — decide: take leave, or plan to watch talks online",
+     "mins": 30,
+     "detail": "Audio is hard-real-time C++; the crowd overlaps heavily with low-latency people.",
+     "link": "https://audio.dev",
+     "id": "2026-11-06-2"
+    }
+   ]
+  },
+  "2026-11-07": {
+   "week": 4,
+   "focus": "Branches & IPC",
+   "tasks": [
+    {
+     "slot": "weekend",
+     "kind": "build",
+     "title": "perf record + flame graph of a real program; learn perf annotate",
+     "mins": 120,
+     "detail": "Your bench repo or any open-source tool you use.",
+     "id": "2026-11-07-0"
+    }
+   ]
+  },
+  "2026-11-08": {
+   "week": 4,
+   "focus": "Branches & IPC",
+   "tasks": [
+    {
+     "slot": "weekend",
+     "kind": "build",
+     "title": "Flame-graph reading drill: explain the top 3 frames of your profile in writing",
+     "mins": 60,
+     "link": "https://www.brendangregg.com/flamegraphs.html",
+     "id": "2026-11-08-0"
+    },
+    {
+     "slot": "weekend",
+     "kind": "algo",
+     "title": "Stack → Binary Search: solve 1 new problem",
+     "mins": 45,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2026-11-08-1"
+    },
+    {
+     "slot": "weekend",
+     "kind": "review",
+     "title": "Weekly review: tick-off rate, hours, what to change next week",
+     "mins": 15,
+     "id": "2026-11-08-2"
+    }
+   ]
+  },
+  "2026-11-09": {
+   "week": 5,
+   "focus": "Syscalls, TLB & allocation",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Effective Modern C++ — Items 41–42 (finish the book)",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "id": "2026-11-09-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Linked List: solve 2 new problems",
+     "mins": 60,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 2,
+     "fresh": true,
+     "id": "2026-11-09-1"
+    },
+    {
+     "slot": "home",
+     "kind": "review",
+     "title": "Review last week's misses; re-solve one from memory",
+     "mins": 15,
+     "id": "2026-11-09-2"
+    }
+   ]
+  },
+  "2026-11-10": {
+   "week": 5,
+   "focus": "Syscalls, TLB & allocation",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "CSAPP Ch. 6 — memory hierarchy §6.1–6.3",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "id": "2026-11-10-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Linked List: solve 2 new problems",
+     "mins": 45,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 2,
+     "fresh": true,
+     "id": "2026-11-10-1"
+    },
+    {
+     "slot": "home",
+     "kind": "build",
+     "title": "Cost of a syscall, clock_gettime (vDSO) and a context switch (pipe ping-pong)",
+     "mins": 45,
+     "id": "2026-11-10-2"
+    }
+   ]
+  },
+  "2026-11-11": {
+   "week": 5,
+   "focus": "Syscalls, TLB & allocation",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "CSAPP Ch. 6 — §6.4–6.6 (caches, cache-friendly code)",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "id": "2026-11-11-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Linked List: solve 2 new problems",
+     "mins": 60,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 2,
+     "fresh": true,
+     "id": "2026-11-11-1"
+    },
+    {
+     "slot": "home",
+     "kind": "review",
+     "title": "Spaced repetition: re-solve one earlier miss",
+     "mins": 15,
+     "id": "2026-11-11-2"
+    }
+   ]
+  },
+  "2026-11-12": {
+   "week": 5,
+   "focus": "Syscalls, TLB & allocation",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "CSAPP Ch. 9 — virtual memory §9.1–9.6",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "id": "2026-11-12-0"
+    },
+    {
+     "slot": "home",
+     "kind": "build",
+     "title": "TLB: random access over 1 GB, 4 KB pages vs huge pages (madvise); perf stat dTLB-load-misses",
+     "mins": 45,
+     "id": "2026-11-12-1"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Linked List: solve 1 new problem",
+     "mins": 30,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2026-11-12-2"
+    }
+   ]
+  },
+  "2026-11-13": {
+   "week": 5,
+   "focus": "Syscalls, TLB & allocation",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "CSAPP Ch. 9 — §9.7–9.9 (case study, mmap, dynamic allocation)",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "id": "2026-11-13-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Linked List: solve 1 new problem",
+     "mins": 30,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2026-11-13-1"
+    },
+    {
+     "slot": "home",
+     "kind": "people",
+     "title": "Watch one ADC talk; note one speaker or author worth following",
+     "mins": 30,
+     "link": "https://audio.dev",
+     "id": "2026-11-13-2"
+    }
+   ]
+  },
+  "2026-11-14": {
+   "week": 5,
+   "focus": "Syscalls, TLB & allocation",
+   "tasks": [
+    {
+     "slot": "weekend",
+     "kind": "build",
+     "title": "Allocation: new/delete vs arena/object pool for 10M small objects; report p50/p99/p99.9 with HdrHistogram",
+     "mins": 120,
+     "detail": "Never report averages for latency. Percentiles only.",
+     "id": "2026-11-14-0"
+    }
+   ]
+  },
+  "2026-11-15": {
+   "week": 5,
+   "focus": "Syscalls, TLB & allocation",
+   "tasks": [
+    {
+     "slot": "weekend",
+     "kind": "build",
+     "title": "Consolidate your numbers table — everything measured so far, one page",
+     "mins": 60,
+     "id": "2026-11-15-0"
+    },
+    {
+     "slot": "weekend",
+     "kind": "algo",
+     "title": "Linked List: solve 1 new problem",
+     "mins": 45,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2026-11-15-1"
+    },
+    {
+     "slot": "weekend",
+     "kind": "review",
+     "title": "Weekly review: tick-off rate, hours, what to change next week",
+     "mins": 15,
+     "id": "2026-11-15-2"
+    }
+   ]
+  },
+  "2026-11-16": {
+   "week": 6,
+   "focus": "Sampling week A — trading",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Harris, Trading and Exchanges — Ch. 1–2",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "id": "2026-11-16-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Linked List → Trees: solve 2 new problems",
+     "mins": 60,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 2,
+     "fresh": true,
+     "id": "2026-11-16-1"
+    },
+    {
+     "slot": "home",
+     "kind": "review",
+     "title": "Review last week's misses; re-solve one from memory",
+     "mins": 15,
+     "id": "2026-11-16-2"
+    }
+   ]
+  },
+  "2026-11-17": {
+   "week": 6,
+   "focus": "Sampling week A — trading",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Harris — Ch. 3–4 (orders and order properties)",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "id": "2026-11-17-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Linked List → Trees: solve 2 new problems",
+     "mins": 45,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 2,
+     "fresh": true,
+     "id": "2026-11-17-1"
+    },
+    {
+     "slot": "home",
+     "kind": "build",
+     "title": "Design a limit order book on paper: price levels, FIFO queues, cancel-by-id",
+     "mins": 45,
+     "id": "2026-11-17-2"
+    }
+   ]
+  },
+  "2026-11-18": {
+   "week": 6,
+   "focus": "Sampling week A — trading",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Harris — Ch. 5–6 (market structures, order-driven markets)",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "id": "2026-11-18-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Linked List → Trees: solve 1 new problem",
+     "mins": 60,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2026-11-18-1"
+    },
+    {
+     "slot": "home",
+     "kind": "review",
+     "title": "Spaced repetition: re-solve one earlier miss",
+     "mins": 15,
+     "id": "2026-11-18-2"
+    }
+   ]
+  },
+  "2026-11-19": {
+   "week": 6,
+   "focus": "Sampling week A — trading",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "NASDAQ TotalView-ITCH 5.0 spec — §1–4 (print it)",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "link": "https://www.nasdaqtrader.com/content/technicalsupport/specifications/dataproducts/NQTVITCHspecification.pdf",
+     "id": "2026-11-19-0"
+    },
+    {
+     "slot": "home",
+     "kind": "build",
+     "title": "Implement add + cancel (std::map + std::list is fine); unit tests",
+     "mins": 45,
+     "detail": "Correctness first. Zero optimisation this week.",
+     "id": "2026-11-19-1"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Linked List → Trees: solve 1 new problem",
+     "mins": 30,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2026-11-19-2"
+    }
+   ]
+  },
+  "2026-11-20": {
+   "week": 6,
+   "focus": "Sampling week A — trading",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Fowler — The LMAX Architecture",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "link": "https://martinfowler.com/articles/lmax.html",
+     "id": "2026-11-20-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Linked List → Trees: solve 1 new problem",
+     "mins": 30,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2026-11-20-1"
+    },
+    {
+     "slot": "home",
+     "kind": "people",
+     "title": "Message one engineer whose talk or post you used — ask one specific question",
+     "mins": 30,
+     "detail": "Specific beats flattering. Never open with a referral request.",
+     "id": "2026-11-20-2"
+    }
+   ]
+  },
+  "2026-11-21": {
+   "week": 6,
+   "focus": "Sampling week A — trading",
+   "tasks": [
+    {
+     "slot": "weekend",
+     "kind": "build",
+     "title": "Matching: limit & market orders, price-time priority, partial fills; tests",
+     "mins": 120,
+     "id": "2026-11-21-0"
+    }
+   ]
+  },
+  "2026-11-22": {
+   "week": 6,
+   "focus": "Sampling week A — trading",
+   "tasks": [
+    {
+     "slot": "weekend",
+     "kind": "build",
+     "title": "Throughput & per-op p99 for 1M random orders. Then score enjoyment 1–10 and write why",
+     "mins": 60,
+     "id": "2026-11-22-0"
+    },
+    {
+     "slot": "weekend",
+     "kind": "algo",
+     "title": "Linked List → Trees: solve 1 new problem",
+     "mins": 45,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2026-11-22-1"
+    },
+    {
+     "slot": "weekend",
+     "kind": "review",
+     "title": "Weekly review: tick-off rate, hours, what to change next week",
+     "mins": 15,
+     "id": "2026-11-22-2"
+    }
+   ]
+  },
+  "2026-11-23": {
+   "week": 7,
+   "focus": "Sampling week B — GPU",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Programming Massively Parallel Processors — Ch. 1–3",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "id": "2026-11-23-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Trees: solve 2 new problems",
+     "mins": 60,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 2,
+     "fresh": true,
+     "id": "2026-11-23-1"
+    },
+    {
+     "slot": "home",
+     "kind": "review",
+     "title": "Review last week's misses; re-solve one from memory",
+     "mins": 15,
+     "id": "2026-11-23-2"
+    }
+   ]
+  },
+  "2026-11-24": {
+   "week": 7,
+   "focus": "Sampling week B — GPU",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "PMPP — Ch. 4 (compute architecture & scheduling)",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "id": "2026-11-24-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Trees: solve 2 new problems",
+     "mins": 45,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 2,
+     "fresh": true,
+     "id": "2026-11-24-1"
+    },
+    {
+     "slot": "home",
+     "kind": "build",
+     "title": "Get a GPU: your own NVIDIA card or free Colab T4; run a vector-add kernel timed with cudaEvent",
+     "mins": 45,
+     "link": "https://colab.research.google.com",
+     "id": "2026-11-24-2"
+    }
+   ]
+  },
+  "2026-11-25": {
+   "week": 7,
+   "focus": "Sampling week B — GPU",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "PMPP — Ch. 5 (memory architecture & data locality)",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "id": "2026-11-25-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Trees: solve 1 new problem",
+     "mins": 60,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2026-11-25-1"
+    },
+    {
+     "slot": "home",
+     "kind": "review",
+     "title": "Spaced repetition: re-solve one earlier miss",
+     "mins": 15,
+     "id": "2026-11-25-2"
+    }
+   ]
+  },
+  "2026-11-26": {
+   "week": 7,
+   "focus": "Sampling week B — GPU",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "CUDA C++ Best Practices Guide — memory optimisations section",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "link": "https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/",
+     "id": "2026-11-26-0"
+    },
+    {
+     "slot": "home",
+     "kind": "build",
+     "title": "Naive matmul kernel; verify against a CPU reference",
+     "mins": 45,
+     "id": "2026-11-26-1"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Trees: solve 1 new problem",
+     "mins": 30,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2026-11-26-2"
+    }
+   ]
+  },
+  "2026-11-27": {
+   "week": 7,
+   "focus": "Sampling week B — GPU",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Horace He — Making Deep Learning Go Brrrr From First Principles",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "link": "https://horace.io/brrr_intro.html",
+     "id": "2026-11-27-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Trees: solve 1 new problem",
+     "mins": 30,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2026-11-27-1"
+    },
+    {
+     "slot": "home",
+     "kind": "people",
+     "title": "Join GPU MODE; lurk and watch one lecture",
+     "mins": 30,
+     "detail": "Meeting C++ (Berlin) runs 26–28 Nov — talks appear online later.",
+     "link": "https://www.gpumode.com",
+     "id": "2026-11-27-2"
+    }
+   ]
+  },
+  "2026-11-28": {
+   "week": 7,
+   "focus": "Sampling week B — GPU",
+   "tasks": [
+    {
+     "slot": "weekend",
+     "kind": "build",
+     "title": "Tiled shared-memory matmul; GFLOPS vs naive vs cuBLAS for N = 256…4096",
+     "mins": 120,
+     "id": "2026-11-28-0"
+    }
+   ]
+  },
+  "2026-11-29": {
+   "week": 7,
+   "focus": "Sampling week B — GPU",
+   "tasks": [
+    {
+     "slot": "weekend",
+     "kind": "build",
+     "title": "Read Boehm's matmul post to kernel 3; score enjoyment 1–10 and compare with week A",
+     "mins": 60,
+     "link": "https://siboehm.com/articles/22/CUDA-MMM",
+     "id": "2026-11-29-0"
+    },
+    {
+     "slot": "weekend",
+     "kind": "algo",
+     "title": "Trees: solve 1 new problem",
+     "mins": 45,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2026-11-29-1"
+    },
+    {
+     "slot": "weekend",
+     "kind": "review",
+     "title": "Weekly review: tick-off rate, hours, what to change next week",
+     "mins": 15,
+     "id": "2026-11-29-2"
+    }
+   ]
+  },
+  "2026-11-30": {
+   "week": 8,
+   "focus": "Memory model & lock-free",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "C++ Concurrency in Action — Ch. 5 (memory model) part 1",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "id": "2026-11-30-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Tries → Heap / Priority Queue: solve 2 new problems",
+     "mins": 60,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 2,
+     "fresh": true,
+     "id": "2026-11-30-1"
+    },
+    {
+     "slot": "home",
+     "kind": "review",
+     "title": "Review last week's misses; re-solve one from memory",
+     "mins": 15,
+     "id": "2026-11-30-2"
+    }
+   ]
+  },
+  "2026-12-01": {
+   "week": 8,
+   "focus": "Memory model & lock-free",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "C++ Concurrency in Action — Ch. 5 part 2 (orderings)",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "id": "2026-12-01-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Tries → Heap / Priority Queue: solve 2 new problems",
+     "mins": 45,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 2,
+     "fresh": true,
+     "id": "2026-12-01-1"
+    },
+    {
+     "slot": "home",
+     "kind": "build",
+     "title": "Implement an SPSC ring buffer with std::atomic acquire/release; tests",
+     "mins": 45,
+     "id": "2026-12-01-2"
+    }
+   ]
+  },
+  "2026-12-02": {
+   "week": 8,
+   "focus": "Memory model & lock-free",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Preshing — Acquire and Release Semantics",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "link": "https://preshing.com/20120913/acquire-and-release-semantics/",
+     "id": "2026-12-02-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Tries → Heap / Priority Queue: solve 1 new problem",
+     "mins": 60,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2026-12-02-1"
+    },
+    {
+     "slot": "home",
+     "kind": "review",
+     "title": "Spaced repetition: re-solve one earlier miss",
+     "mins": 15,
+     "id": "2026-12-02-2"
+    }
+   ]
+  },
+  "2026-12-03": {
+   "week": 8,
+   "focus": "Memory model & lock-free",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Preshing — The Synchronizes-With Relation",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "link": "https://preshing.com/20130823/the-synchronizes-with-relation/",
+     "id": "2026-12-03-0"
+    },
+    {
+     "slot": "home",
+     "kind": "build",
+     "title": "Benchmark it between two pinned cores vs a mutex + condition_variable queue",
+     "mins": 45,
+     "id": "2026-12-03-1"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Tries → Heap / Priority Queue: solve 1 new problem",
+     "mins": 30,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2026-12-03-2"
+    }
+   ]
+  },
+  "2026-12-04": {
+   "week": 8,
+   "focus": "Memory model & lock-free",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "C++ Concurrency in Action — Ch. 7 (lock-free data structures) part 1",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "id": "2026-12-04-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Tries → Heap / Priority Queue: solve 1 new problem",
+     "mins": 30,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2026-12-04-1"
+    },
+    {
+     "slot": "home",
+     "kind": "people",
+     "title": "Draft a 5-minute lightning talk outline from your measured numbers",
+     "mins": 30,
+     "detail": "Working title: 'What my machine actually costs'.",
+     "id": "2026-12-04-2"
+    }
+   ]
+  },
+  "2026-12-05": {
+   "week": 8,
+   "focus": "Memory model & lock-free",
+   "tasks": [
+    {
+     "slot": "weekend",
+     "kind": "build",
+     "title": "Optimise one change at a time: pad head/tail, cache the remote index, power-of-two masking",
+     "mins": 120,
+     "detail": "Measure after each single change. Write down what each bought.",
+     "id": "2026-12-05-0"
+    }
+   ]
+  },
+  "2026-12-06": {
+   "week": 8,
+   "focus": "Memory model & lock-free",
+   "tasks": [
+    {
+     "slot": "weekend",
+     "kind": "build",
+     "title": "Run under ThreadSanitizer; write private notes on what each change bought",
+     "mins": 60,
+     "id": "2026-12-06-0"
+    },
+    {
+     "slot": "weekend",
+     "kind": "algo",
+     "title": "Tries → Heap / Priority Queue: solve 1 new problem",
+     "mins": 45,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2026-12-06-1"
+    },
+    {
+     "slot": "weekend",
+     "kind": "review",
+     "title": "Weekly review: tick-off rate, hours, what to change next week",
+     "mins": 15,
+     "id": "2026-12-06-2"
+    }
+   ]
+  },
+  "2026-12-07": {
+   "week": 9,
+   "focus": "SIMD & optimising code",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "CSAPP Ch. 5 — optimising program performance §5.1–5.7",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "id": "2026-12-07-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Heap → Backtracking: solve 2 new problems",
+     "mins": 60,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 2,
+     "fresh": true,
+     "id": "2026-12-07-1"
+    },
+    {
+     "slot": "home",
+     "kind": "review",
+     "title": "Review last week's misses; re-solve one from memory",
+     "mins": 15,
+     "id": "2026-12-07-2"
+    }
+   ]
+  },
+  "2026-12-08": {
+   "week": 9,
+   "focus": "SIMD & optimising code",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "CSAPP Ch. 5 — §5.8–5.15",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "id": "2026-12-08-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Heap → Backtracking: solve 2 new problems",
+     "mins": 45,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 2,
+     "fresh": true,
+     "id": "2026-12-08-1"
+    },
+    {
+     "slot": "home",
+     "kind": "build",
+     "title": "Check auto-vectorisation of sum/dot-product with -O3 -march=native -fopt-info-vec; read the asm",
+     "mins": 45,
+     "link": "https://godbolt.org",
+     "id": "2026-12-08-2"
+    }
+   ]
+  },
+  "2026-12-09": {
+   "week": 9,
+   "focus": "SIMD & optimising code",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Lemire's blog — two SIMD posts of your choice",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "link": "https://lemire.me/blog/",
+     "id": "2026-12-09-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Heap → Backtracking: solve 1 new problem",
+     "mins": 60,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2026-12-09-1"
+    },
+    {
+     "slot": "home",
+     "kind": "review",
+     "title": "Spaced repetition: re-solve one earlier miss",
+     "mins": 15,
+     "id": "2026-12-09-2"
+    }
+   ]
+  },
+  "2026-12-10": {
+   "week": 9,
+   "focus": "SIMD & optimising code",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Agner Fog, Optimizing C++ — vectorisation section",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "link": "https://www.agner.org/optimize/",
+     "id": "2026-12-10-0"
+    },
+    {
+     "slot": "home",
+     "kind": "build",
+     "title": "Hand-write the AVX2 intrinsics version; compare",
+     "mins": 45,
+     "id": "2026-12-10-1"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Heap → Backtracking: solve 1 new problem",
+     "mins": 30,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2026-12-10-2"
+    }
+   ]
+  },
+  "2026-12-11": {
+   "week": 9,
+   "focus": "SIMD & optimising code",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "C++ Concurrency in Action — Ch. 7 part 2",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "id": "2026-12-11-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Heap → Backtracking: solve 1 new problem",
+     "mins": 30,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2026-12-11-1"
+    },
+    {
+     "slot": "home",
+     "kind": "people",
+     "title": "Note C++Online (March) and ACCU on Sea (June) ticket/lightning-talk dates in your calendar",
+     "mins": 30,
+     "link": "https://cpponline.uk",
+     "id": "2026-12-11-2"
+    }
+   ]
+  },
+  "2026-12-12": {
+   "week": 9,
+   "focus": "SIMD & optimising code",
+   "tasks": [
+    {
+     "slot": "weekend",
+     "kind": "build",
+     "title": "SIMD on a real task: integer parsing or CSV field splitting; report GB/s scalar vs SIMD",
+     "mins": 120,
+     "id": "2026-12-12-0"
+    }
+   ]
+  },
+  "2026-12-13": {
+   "week": 9,
+   "focus": "SIMD & optimising code",
+   "tasks": [
+    {
+     "slot": "weekend",
+     "kind": "build",
+     "title": "Write up what the compiler did and didn't vectorise, and why",
+     "mins": 60,
+     "id": "2026-12-13-0"
+    },
+    {
+     "slot": "weekend",
+     "kind": "algo",
+     "title": "Heap → Backtracking: solve 1 new problem",
+     "mins": 45,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2026-12-13-1"
+    },
+    {
+     "slot": "weekend",
+     "kind": "review",
+     "title": "Weekly review: tick-off rate, hours, what to change next week",
+     "mins": 15,
+     "id": "2026-12-13-2"
+    }
+   ]
+  },
+  "2026-12-14": {
+   "week": 10,
+   "focus": "Profiling methodology",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Bakhvalov — Top-Down Microarchitecture Analysis chapter",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "link": "https://github.com/dendibakh/perf-book",
+     "id": "2026-12-14-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Graphs: solve 2 new problems",
+     "mins": 60,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 2,
+     "fresh": true,
+     "id": "2026-12-14-1"
+    },
+    {
+     "slot": "home",
+     "kind": "review",
+     "title": "Review last week's misses; re-solve one from memory",
+     "mins": 15,
+     "id": "2026-12-14-2"
+    }
+   ]
+  },
+  "2026-12-15": {
+   "week": 10,
+   "focus": "Profiling methodology",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Gregg, Systems Performance — Ch. 2 (methodologies)",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "link": "https://www.brendangregg.com/usemethod.html",
+     "id": "2026-12-15-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Graphs: solve 2 new problems",
+     "mins": 45,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 2,
+     "fresh": true,
+     "id": "2026-12-15-1"
+    },
+    {
+     "slot": "home",
+     "kind": "build",
+     "title": "Top-down analysis of your week-6 order book with perf / toplev; which bound dominates?",
+     "mins": 45,
+     "link": "https://github.com/andikleen/pmu-tools",
+     "id": "2026-12-15-2"
+    }
+   ]
+  },
+  "2026-12-16": {
+   "week": 10,
+   "focus": "Profiling methodology",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Gregg, Systems Performance — Ch. 6 (CPUs), first half",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "id": "2026-12-16-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Graphs: solve 1 new problem",
+     "mins": 60,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2026-12-16-1"
+    },
+    {
+     "slot": "home",
+     "kind": "review",
+     "title": "Spaced repetition: re-solve one earlier miss",
+     "mins": 15,
+     "id": "2026-12-16-2"
+    }
+   ]
+  },
+  "2026-12-17": {
+   "week": 10,
+   "focus": "Profiling methodology",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Gregg's blog — flame graphs & the USE method",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "link": "https://www.brendangregg.com/flamegraphs.html",
+     "id": "2026-12-17-0"
+    },
+    {
+     "slot": "home",
+     "kind": "build",
+     "title": "Fix the biggest bottleneck (flat price-level array or pool allocator); remeasure",
+     "mins": 45,
+     "id": "2026-12-17-1"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Graphs: solve 1 new problem",
+     "mins": 30,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2026-12-17-2"
+    }
+   ]
+  },
+  "2026-12-18": {
+   "week": 10,
+   "focus": "Profiling methodology",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Bakhvalov — CPU back-end optimisation chapter",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "link": "https://github.com/dendibakh/perf-book",
+     "id": "2026-12-18-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Graphs: solve 1 new problem",
+     "mins": 30,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2026-12-18-1"
+    },
+    {
+     "slot": "home",
+     "kind": "people",
+     "title": "Second outreach message: one engineer, one specific question",
+     "mins": 30,
+     "id": "2026-12-18-2"
+    }
+   ]
+  },
+  "2026-12-19": {
+   "week": 10,
+   "focus": "Profiling methodology",
+   "tasks": [
+    {
+     "slot": "weekend",
+     "kind": "build",
+     "title": "Draft writeup #1: 'What my machine costs' — latency table, false sharing, branches, TLB",
+     "mins": 120,
+     "id": "2026-12-19-0"
+    }
+   ]
+  },
+  "2026-12-20": {
+   "week": 10,
+   "focus": "Profiling methodology",
+   "tasks": [
+    {
+     "slot": "weekend",
+     "kind": "build",
+     "title": "Finish the draft; check it against your employer's sign-off rules",
+     "mins": 60,
+     "id": "2026-12-20-0"
+    },
+    {
+     "slot": "weekend",
+     "kind": "algo",
+     "title": "Graphs: solve 1 new problem",
+     "mins": 45,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2026-12-20-1"
+    },
+    {
+     "slot": "weekend",
+     "kind": "review",
+     "title": "Weekly review: tick-off rate, hours, what to change next week",
+     "mins": 15,
+     "id": "2026-12-20-2"
+    }
+   ]
+  },
+  "2026-12-21": {
+   "week": 11,
+   "focus": "Christmas — light week",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "CppCon talk: Chandler Carruth — Efficiency with Algorithms, Performance with Data Structures",
+     "mins": 40,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "link": "https://www.youtube.com/results?search_query=chandler+carruth+efficiency+with+algorithms+performance+with+data+structures",
+     "id": "2026-12-21-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Graphs: solve 1 new problem",
+     "mins": 60,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2026-12-21-1"
+    },
+    {
+     "slot": "home",
+     "kind": "review",
+     "title": "Review last week's misses; re-solve one from memory",
+     "mins": 15,
+     "id": "2026-12-21-2"
+    }
+   ]
+  },
+  "2026-12-22": {
+   "week": 11,
+   "focus": "Christmas — light week",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "CppCon talk: Fedor Pikus — branchless programming",
+     "mins": 40,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "link": "https://www.youtube.com/results?search_query=fedor+pikus+branchless+programming+cppcon",
+     "id": "2026-12-22-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Graphs: solve 1 new problem",
+     "mins": 45,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2026-12-22-1"
+    }
+   ]
+  },
+  "2026-12-23": {
+   "week": 11,
+   "focus": "Christmas — light week",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Optional: skim your numbers note and your miss log",
+     "mins": 40,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "id": "2026-12-23-0"
+    }
+   ]
+  },
+  "2026-12-24": {
+   "week": 11,
+   "focus": "Rest day",
+   "rest": true,
+   "tasks": []
+  },
+  "2026-12-25": {
+   "week": 11,
+   "focus": "Rest day",
+   "rest": true,
+   "tasks": []
+  },
+  "2026-12-26": {
+   "week": 11,
+   "focus": "Rest day",
+   "rest": true,
+   "tasks": []
+  },
+  "2026-12-27": {
+   "week": 11,
+   "focus": "Christmas — light week",
+   "tasks": [
+    {
+     "slot": "weekend",
+     "kind": "review",
+     "title": "Quarter look-back: what's done, what slipped, what to cut",
+     "mins": 60,
+     "id": "2026-12-27-0"
+    },
+    {
+     "slot": "weekend",
+     "kind": "review",
+     "title": "Weekly review: tick-off rate, hours, what to change next week",
+     "mins": 15,
+     "id": "2026-12-27-1"
+    }
+   ]
+  },
+  "2026-12-28": {
+   "week": 12,
+   "focus": "New Year — consolidate",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "CppCon talk: Chandler Carruth — Tuning C++: Benchmarks, CPUs and Compilers",
+     "mins": 40,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "link": "https://www.youtube.com/results?search_query=chandler+carruth+tuning+c%2B%2B+benchmarks+cpus+compilers",
+     "id": "2026-12-28-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Re-solve 2 past problems from your miss log",
+     "mins": 60,
+     "detail": "Pick the ones you failed hardest. Solve cold, timed, without looking at your notes.",
+     "link": "https://neetcode.io/practice",
+     "n": 2,
+     "fresh": false,
+     "id": "2026-12-28-1"
+    },
+    {
+     "slot": "home",
+     "kind": "review",
+     "title": "Review last week's misses; re-solve one from memory",
+     "mins": 15,
+     "id": "2026-12-28-2"
+    }
+   ]
+  },
+  "2026-12-29": {
+   "week": 12,
+   "focus": "New Year — consolidate",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Re-read your miss log; pick the 10 worst problems for re-solving",
+     "mins": 40,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "id": "2026-12-29-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Re-solve 2 past problems from your miss log",
+     "mins": 45,
+     "detail": "Pick the ones you failed hardest. Solve cold, timed, without looking at your notes.",
+     "link": "https://neetcode.io/practice",
+     "n": 2,
+     "fresh": false,
+     "id": "2026-12-29-1"
+    }
+   ]
+  },
+  "2026-12-30": {
+   "week": 12,
+   "focus": "New Year — consolidate",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Optional: PMPP Ch. 6 or Harris Ch. 7 — whichever you scored higher",
+     "mins": 40,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "id": "2026-12-30-0"
+    }
+   ]
+  },
+  "2026-12-31": {
+   "week": 12,
+   "focus": "New Year — consolidate",
+   "tasks": [
+    {
+     "slot": "home",
+     "kind": "build",
+     "title": "Re-run every microbenchmark; confirm the numbers reproduce",
+     "mins": 45,
+     "id": "2026-12-31-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "Re-solve 1 past problem from your miss log",
+     "mins": 30,
+     "detail": "Pick the ones you failed hardest. Solve cold, timed, without looking at your notes.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": false,
+     "id": "2026-12-31-1"
+    }
+   ]
+  },
+  "2027-01-01": {
+   "week": 12,
+   "focus": "Rest day",
+   "rest": true,
+   "tasks": []
+  },
+  "2027-01-02": {
+   "week": 12,
+   "focus": "New Year — consolidate",
+   "tasks": [
+    {
+     "slot": "weekend",
+     "kind": "build",
+     "title": "Publish writeup #1 (once signed off) — blog or GitHub README",
+     "mins": 120,
+     "detail": "A published thing is worth ten private ones.",
+     "id": "2027-01-02-0"
+    }
+   ]
+  },
+  "2027-01-03": {
+   "week": 12,
+   "focus": "New Year — consolidate",
+   "tasks": [
+    {
+     "slot": "weekend",
+     "kind": "review",
+     "title": "Plan next quarter's reading; list what to carry over",
+     "mins": 60,
+     "id": "2027-01-03-0"
+    },
+    {
+     "slot": "weekend",
+     "kind": "algo",
+     "title": "Re-solve 1 past problem from your miss log",
+     "mins": 45,
+     "detail": "Pick the ones you failed hardest. Solve cold, timed, without looking at your notes.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": false,
+     "id": "2027-01-03-1"
+    },
+    {
+     "slot": "weekend",
+     "kind": "review",
+     "title": "Weekly review: tick-off rate, hours, what to change next week",
+     "mins": 15,
+     "id": "2027-01-03-2"
+    }
+   ]
+  },
+  "2027-01-04": {
+   "week": 13,
+   "focus": "Phase 1 checkpoint",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "C++ Concurrency in Action — Ch. 8 (designing concurrent code)",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "id": "2027-01-04-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "1-D Dynamic Programming: solve 2 new problems",
+     "mins": 60,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 2,
+     "fresh": true,
+     "id": "2027-01-04-1"
+    },
+    {
+     "slot": "home",
+     "kind": "review",
+     "title": "Review last week's misses; re-solve one from memory",
+     "mins": 15,
+     "id": "2027-01-04-2"
+    }
+   ]
+  },
+  "2027-01-05": {
+   "week": 13,
+   "focus": "Phase 1 checkpoint",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Bakhvalov — remaining chapter of your choice",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "link": "https://github.com/dendibakh/perf-book",
+     "id": "2027-01-05-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "1-D Dynamic Programming: solve 2 new problems",
+     "mins": 45,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 2,
+     "fresh": true,
+     "id": "2027-01-05-1"
+    },
+    {
+     "slot": "home",
+     "kind": "build",
+     "title": "Timed mock: 2 medium problems in 50 minutes, talking out loud",
+     "mins": 45,
+     "id": "2027-01-05-2"
+    }
+   ]
+  },
+  "2027-01-06": {
+   "week": 13,
+   "focus": "Phase 1 checkpoint",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Harris Ch. 7 or PMPP Ch. 6 — whichever sampling week you scored higher",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "id": "2027-01-06-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "1-D Dynamic Programming: solve 2 new problems",
+     "mins": 60,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 2,
+     "fresh": true,
+     "id": "2027-01-06-1"
+    },
+    {
+     "slot": "home",
+     "kind": "review",
+     "title": "Spaced repetition: re-solve one earlier miss",
+     "mins": 15,
+     "id": "2027-01-06-2"
+    }
+   ]
+  },
+  "2027-01-07": {
+   "week": 13,
+   "focus": "Phase 1 checkpoint",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Kleppmann, DDIA — Ch. 1 (only if big tech is on your list)",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "id": "2027-01-07-0"
+    },
+    {
+     "slot": "home",
+     "kind": "build",
+     "title": "Retro on the order book or matmul: what would you build next if you picked that fork?",
+     "mins": 45,
+     "id": "2027-01-07-1"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "1-D Dynamic Programming: solve 1 new problem",
+     "mins": 30,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2027-01-07-2"
+    }
+   ]
+  },
+  "2027-01-08": {
+   "week": 13,
+   "focus": "Phase 1 checkpoint",
+   "tasks": [
+    {
+     "slot": "work",
+     "kind": "read",
+     "title": "Gregg, Systems Performance — Ch. 7 (memory), first half",
+     "mins": 60,
+     "detail": "Input only: read, take one page of notes in your own words.",
+     "id": "2027-01-08-0"
+    },
+    {
+     "slot": "home",
+     "kind": "algo",
+     "title": "1-D Dynamic Programming: solve 1 new problem",
+     "mins": 30,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2027-01-08-1"
+    },
+    {
+     "slot": "home",
+     "kind": "people",
+     "title": "Lightning talk: submit to a meetup or C++Online, or give it internally first",
+     "mins": 30,
+     "link": "https://cpponline.uk",
+     "id": "2027-01-08-2"
+    }
+   ]
+  },
+  "2027-01-09": {
+   "week": 13,
+   "focus": "Phase 1 checkpoint",
+   "tasks": [
+    {
+     "slot": "weekend",
+     "kind": "build",
+     "title": "Checkpoint: problems solved, numbers table, writeup, enjoyment scores — write one honest page",
+     "mins": 120,
+     "id": "2027-01-09-0"
+    }
+   ]
+  },
+  "2027-01-10": {
+   "week": 13,
+   "focus": "Phase 1 checkpoint",
+   "tasks": [
+    {
+     "slot": "weekend",
+     "kind": "build",
+     "title": "Extend this roadmap: ask Claude to generate the next 13 weeks",
+     "mins": 60,
+     "id": "2027-01-10-0"
+    },
+    {
+     "slot": "weekend",
+     "kind": "algo",
+     "title": "1-D Dynamic Programming: solve 1 new problem",
+     "mins": 45,
+     "detail": "From the NeetCode 150 list. Weeks 1–3: untimed, focus on the pattern. From week 4: 25-minute cap, then read the solution. Log every miss (problem, what you missed, the pattern) — that log drives Sunday review.",
+     "link": "https://neetcode.io/practice",
+     "n": 1,
+     "fresh": true,
+     "id": "2027-01-10-1"
+    },
+    {
+     "slot": "weekend",
+     "kind": "review",
+     "title": "Weekly review: tick-off rate, hours, what to change next week",
+     "mins": 15,
+     "id": "2027-01-10-2"
+    }
+   ]
+  }
+ }
+}

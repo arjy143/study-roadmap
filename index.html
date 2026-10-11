@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Study Roadmap</title>
+<meta name="theme-color" content="#f4f1ea" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16171a" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%231f2328'/><path d='M9 17l5 5 9-12' stroke='%23e8b04b' stroke-width='3.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="top-inner">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <div>
+        <div class="brand-title">Study Roadmap</div>
+        <div class="brand-sub" id="brandSub">Loading…</div>
+      </div>
+    </div>
+    <div class="overall" id="overall" title="Overall progress"></div>
+  </div>
+  <nav class="tabs" id="tabs">
+    <a href="#/today" data-tab="today">Today</a>
+    <a href="#/week" data-tab="week">Week</a>
+    <a href="#/calendar" data-tab="calendar">Calendar</a>
+    <a href="#/stats" data-tab="stats">Progress</a>
+  </nav>
+</header>
+
+<main id="app" class="wrap" aria-live="polite"></main>
+
+<div class="toast" id="toast" role="status"></div>
+<script src="app.js"></script>
+</body>
+</html>
