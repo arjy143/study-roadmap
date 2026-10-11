@@ -5,7 +5,7 @@ const fs = require("fs");
 module.exports = async ({ github, context, core }) => {
   const { owner, repo } = context.repo;
   const plan = JSON.parse(fs.readFileSync("plan.json", "utf8"));
-  let progress = { tasks: {} };
+  let progress = null;   // only exists once sync is turned on in the site
   try { progress = JSON.parse(fs.readFileSync("progress.json", "utf8")); } catch (_) {}
 
   // Today's date in London, regardless of the runner's UTC clock.
@@ -33,7 +33,7 @@ module.exports = async ({ github, context, core }) => {
   const week = plan.weeks.find((w) => w.n === day.week);
   const lines = [];
   const yd = plan.days[yesterday];
-  if (yd && !yd.rest && yd.tasks.length) {
+  if (progress && yd && !yd.rest && yd.tasks.length) {
     const done = yd.tasks.filter((t) => progress.tasks[t.id] && progress.tasks[t.id].v).length;
     lines.push(`_Yesterday: ${done}/${yd.tasks.length} done${done === yd.tasks.length ? " ✓" : ""}._`, "");
   }
