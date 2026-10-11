@@ -41,6 +41,8 @@ L = {
     "adc": "https://audio.dev",
     "carruth": "https://www.youtube.com/results?search_query=chandler+carruth+tuning+c%2B%2B+benchmarks+cpus+compilers",
     "pikus": "https://www.youtube.com/results?search_query=fedor+pikus+branchless+programming+cppcon",
+    "zetamac": "https://arithmetic.zetamac.com",
+    "brainstellar": "https://brainstellar.com",
     "carruth2": "https://www.youtube.com/results?search_query=chandler+carruth+efficiency+with+algorithms+performance+with+data+structures",
 }
 
@@ -241,13 +243,48 @@ WEEKS = [
                ("Gregg, Systems Performance — Ch. 7 (memory), first half", None)],
          benchA=("Timed mock: 2 medium problems in 50 minutes, talking out loud", None, None),
          benchB=("Retro on the order book or matmul: what would you build next if you picked that fork?", None, None),
-         sat=("Checkpoint: problems solved, numbers table, writeup, enjoyment scores — write one honest page", None),
+         sat=("CHECKPOINT: score yourself against the four gates — pass or fail", "CHECKPOINT"),
          sun=("Extend this roadmap: ask Claude to generate the next 13 weeks", None),
          algo=("1-D Dynamic Programming", [2, 2, 2, 1, 1, 1]),
          people=("Lightning talk: submit to a meetup or C++Online, or give it internally first", None, "cpponline")),
 ]
 
 START = date(2026, 10, 12)  # Monday, week 1
+
+# Weekly "explain it out loud" topic, by week number (None = skip that week).
+EXPLAIN = {
+    1: "Why benchmarks need DoNotOptimize, and what -O2 changes versus -O0",
+    2: "What happens, step by step, on an L1 miss that goes all the way to DRAM",
+    3: "False sharing: what it is, how you'd detect it, how you'd fix it",
+    4: "Branch prediction, and why sorting the input can make a loop faster",
+    5: "Virtual memory and the TLB, and when huge pages help",
+    6: "std::map vs a flat array of price levels for an order book",
+    7: "GPU warps, occupancy and memory coalescing",
+    8: "memory_order_acquire and release, using your SPSC ring buffer",
+    9: "When the compiler will auto-vectorise a loop, and when it won't",
+    10: "How you'd find out why a service got 20% slower",
+    12: "Move semantics and perfect forwarding",
+    13: "The cost of virtual dispatch, and the alternatives",
+}
+
+# One-off tasks for specific dates: (slot, kind, title, mins, detail, link)
+EXTRA = {
+    "2026-10-12": [("home", "admin", "Shortlist 4–6 firms running 2027 graduate software programmes; note each one's cool-off period",
+                    20, "Keep only firms whose cool-off after a rejection ends before August 2027, so a 'no' now can't block next autumn's cycle. Leave your top-choice firms for next year.", None)],
+    "2026-10-13": [("home", "people", "Ask a recruiter: does a placement year count towards the experience limit? Is an Aug 2025 graduate eligible for 2028 programmes?",
+                    15, "The answer decides whether autumn 2027 is a graduate or an experienced-hire application.", None)],
+    "2026-10-18": [("weekend", "admin", "Refresh your CV: unclassified one-line descriptions of your defence work, with numbers",
+                    45, "Check what you're allowed to say. 'Real-time C++ signal-processing pipeline on Linux' is fine; programme names and capabilities are not.", None)],
+    "2026-10-24": [("weekend", "admin", "Submit 2–3 applications to 2027 graduate programmes from your shortlist",
+                    30, "Goal is calibration, not the offer. Online assessments can arrive within days — when one does, swap it in for that day's algorithm block and log what it asked.", None)],
+    "2026-11-01": [("weekend", "review", "Log any online assessments so far: format, topics, where time ran out",
+                    15, "This is the most valuable data you'll get all quarter. Adjust next month's algorithm topics to match.", None)],
+}
+
+CHECKPOINT_DETAIL = ("Pass/fail gate — be honest. Pass if you hit at least 3 of 4: (1) 80+ new problems solved; "
+                     "(2) the timed mock this week: 2 mediums solved in 50 minutes; (3) mental-arithmetic scores clearly "
+                     "rising since October (aim for 40+ on Zetamac's default test); (4) numbers table complete and writeup #1 published or drafted. "
+                     "Fail → next quarter shifts hours from reading and building to whichever gate you missed.")
 
 
 def T(slot, kind, title, mins, detail=None, link=None):
@@ -305,7 +342,8 @@ def build_days():
                                    "Input only: read, take one page of notes in your own words.", link))
                 if di == 0:  # Mon
                     tasks += [algo(topic, counts[0], 60),
-                              T("home", "review", "Review last week's misses; re-solve one from memory", 15)]
+                              T("home", "review", "Review last week's misses; re-solve one from memory", 15) if wi else
+                              T("home", "review", "Set up your miss log: problem, pattern, what you missed, date to retry", 15)]
                 elif di == 1:  # Tue
                     tasks.append(algo(topic, counts[1], 45))
                     if w["benchA"]:
@@ -328,7 +366,8 @@ def build_days():
             elif di == 5:  # Sat
                 if w["sat"]:
                     s = w["sat"]
-                    tasks.append(T("weekend", "build", s[0], 120, s[1] if len(s) > 1 else None))
+                    detail = CHECKPOINT_DETAIL if (len(s) > 1 and s[1] == "CHECKPOINT") else (s[1] if len(s) > 1 else None)
+                    tasks.append(T("weekend", "review" if detail is CHECKPOINT_DETAIL else "build", s[0], 120, detail))
             else:  # Sun
                 s = w["sun"]
                 tasks.append(T("weekend", "build" if not w.get("light") else "review", s[0], 60, None, s[1]))
@@ -338,6 +377,19 @@ def build_days():
                     tasks.append(a)
                 tasks.append(T("weekend", "review", "Weekly review: tick-off rate, hours, what to change next week", 15))
             tasks = [t for t in tasks if t]
+            # Daily 10-minute drill: arithmetic on Mon/Wed/Fri/Sat, probability on Tue/Thu/Sun.
+            slot = "home" if di < 5 else "weekend"
+            if di in (0, 2, 4, 5):
+                tasks.append(T(slot, "drill", "Mental arithmetic: 10 minutes, log your score", 10,
+                               "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.", "zetamac"))
+            else:
+                tasks.append(T(slot, "drill", "Probability: one puzzle, 10 minutes, on paper", 10,
+                               "Work from Brainstellar, Mosteller's Fifty Challenging Problems or Zhou's guide (keep the books at home). Write the answer before checking.", "brainstellar"))
+            if di == 2 and EXPLAIN.get(wi + 1):
+                tasks.append(T("home", "review", f"Explain out loud, 3 minutes: {EXPLAIN[wi + 1]}", 15,
+                               "Record yourself on your phone with no notes, then play it back. Knowing something and explaining it under pressure are different skills; interviews test the second."))
+            for e in EXTRA.get(key, []):
+                tasks.append(T(*e))
             days[key] = dict(week=wi + 1, focus=w["theme"], tasks=tasks)
 
     for key, day in days.items():
@@ -356,12 +408,18 @@ def main():
         title="Study roadmap",
         start="2026-10-11",
         end=max(days),
-        target="2027-10-11",
-        phases=[dict(n=1, name="Foundations", months="1–3",
-                     summary="Measurement rig, memory & CPU fundamentals, modern C++, ~90 algorithm problems, both forks sampled."),
-                dict(n=2, name="Build", months="4–8", summary="Coming next: the flagship project or open-source work."),
-                dict(n=3, name="Convert", months="9–11", summary="Harder algorithms, domain prep, mocks, publish."),
-                dict(n=4, name="Apply", months="12", summary="Second-choice firms first.")],
+        target="2027-08-01",
+        phases=[dict(n=1, name="Foundations", months="Oct–Jan",
+                     summary="Measurement rig, memory & CPU fundamentals, modern C++, ~90 problems, daily maths drill, both forks sampled. "
+                             "A few calibration applications to this year's graduate cycle. Ends with a pass/fail gate."),
+                dict(n=2, name="Build & sharpen", months="Jan–Apr",
+                     summary="Pick a fork. A smaller flagship project — measured and written up by early May. "
+                             "First real interview loop around April–May at a firm you'd accept but isn't your top choice."),
+                dict(n=3, name="Convert", months="May–Jul",
+                     summary="Harder timed problems, probability and C++ depth, weekly mock interviews, behavioural stories. Ready by 1 August."),
+                dict(n=4, name="Apply", months="Aug–Oct 2027",
+                     summary="Graduate cycle opens: apply early, second-choice firms first. "
+                             "Fallback if it doesn't land: carry straight on to experienced-hire roles — the preparation transfers.")],
         weeks=weeks,
         days=days,
     )

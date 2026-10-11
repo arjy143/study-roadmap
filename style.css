@@ -17,6 +17,7 @@
   --k-people: #a8456e; --k-people-bg: #f6e1ea;
   --k-review: #6a54a3; --k-review-bg: #ebe5f6;
   --k-admin: #5f646b;  --k-admin-bg: #e9e7e1;
+  --k-drill: #1f7a80;  --k-drill-bg: #d9eeef;
   --shadow: 0 1px 0 rgba(31,35,40,.04), 0 6px 24px -12px rgba(31,35,40,.18);
   --serif: "Source Serif 4", Georgia, serif;
   --sans: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -30,6 +31,7 @@
     --k-read: #8bb6e8; --k-read-bg: #1f2c3b; --k-algo: #e8b04b; --k-algo-bg: #3a3020;
     --k-build: #6cc28f; --k-build-bg: #1f3528; --k-people: #e48fb2; --k-people-bg: #3a2330;
     --k-review: #b4a2ea; --k-review-bg: #2b2540; --k-admin: #a9aab0; --k-admin-bg: #2a2c30;
+    --k-drill: #6fc8cd; --k-drill-bg: #1c3436;
     --shadow: 0 1px 0 rgba(0,0,0,.3), 0 8px 28px -14px rgba(0,0,0,.6);
   }
 }
@@ -114,6 +116,7 @@ button { font: inherit; color: inherit; }
 .k-people { color: var(--k-people); background: var(--k-people-bg); }
 .k-review { color: var(--k-review); background: var(--k-review-bg); }
 .k-admin { color: var(--k-admin); background: var(--k-admin-bg); }
+.k-drill { color: var(--k-drill); background: var(--k-drill-bg); }
 .t-detail { grid-column: 2 / 4; color: var(--ink-2); font-size: 14px; display: none; }
 .task.open .t-detail { display: block; }
 .t-detail a { color: var(--accent); font-weight: 500; text-underline-offset: 2px; }

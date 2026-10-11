@@ -2,31 +2,31 @@
  "title": "Study roadmap",
  "start": "2026-10-11",
  "end": "2027-01-10",
- "target": "2027-10-11",
+ "target": "2027-08-01",
  "phases": [
   {
    "n": 1,
    "name": "Foundations",
-   "months": "1–3",
-   "summary": "Measurement rig, memory & CPU fundamentals, modern C++, ~90 algorithm problems, both forks sampled."
+   "months": "Oct–Jan",
+   "summary": "Measurement rig, memory & CPU fundamentals, modern C++, ~90 problems, daily maths drill, both forks sampled. A few calibration applications to this year's graduate cycle. Ends with a pass/fail gate."
   },
   {
    "n": 2,
-   "name": "Build",
-   "months": "4–8",
-   "summary": "Coming next: the flagship project or open-source work."
+   "name": "Build & sharpen",
+   "months": "Jan–Apr",
+   "summary": "Pick a fork. A smaller flagship project — measured and written up by early May. First real interview loop around April–May at a firm you'd accept but isn't your top choice."
   },
   {
    "n": 3,
    "name": "Convert",
-   "months": "9–11",
-   "summary": "Harder algorithms, domain prep, mocks, publish."
+   "months": "May–Jul",
+   "summary": "Harder timed problems, probability and C++ depth, weekly mock interviews, behavioural stories. Ready by 1 August."
   },
   {
    "n": 4,
    "name": "Apply",
-   "months": "12",
-   "summary": "Second-choice firms first."
+   "months": "Aug–Oct 2027",
+   "summary": "Graduate cycle opens: apply early, second-choice firms first. Fallback if it doesn't land: carry straight on to experienced-hire roles — the preparation transfers."
   }
  ],
  "weeks": [
@@ -186,9 +186,26 @@
     {
      "slot": "home",
      "kind": "review",
-     "title": "Review last week's misses; re-solve one from memory",
+     "title": "Set up your miss log: problem, pattern, what you missed, date to retry",
      "mins": 15,
      "id": "2026-10-12-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-10-12-3"
+    },
+    {
+     "slot": "home",
+     "kind": "admin",
+     "title": "Shortlist 4–6 firms running 2027 graduate software programmes; note each one's cool-off period",
+     "mins": 20,
+     "detail": "Keep only firms whose cool-off after a rejection ends before August 2027, so a 'no' now can't block next autumn's cycle. Leave your top-choice firms for next year.",
+     "id": "2026-10-12-4"
     }
    ]
   },
@@ -223,6 +240,23 @@
      "detail": "Personal machine only. A Linux box (or WSL2 if you must — note perf counters are limited there).",
      "link": "https://github.com/google/benchmark",
      "id": "2026-10-13-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Probability: one puzzle, 10 minutes, on paper",
+     "mins": 10,
+     "detail": "Work from Brainstellar, Mosteller's Fifty Challenging Problems or Zhou's guide (keep the books at home). Write the answer before checking.",
+     "link": "https://brainstellar.com",
+     "id": "2026-10-13-3"
+    },
+    {
+     "slot": "home",
+     "kind": "people",
+     "title": "Ask a recruiter: does a placement year count towards the experience limit? Is an Aug 2025 graduate eligible for 2028 programmes?",
+     "mins": 15,
+     "detail": "The answer decides whether autumn 2027 is a graduate or an experienced-hire application.",
+     "id": "2026-10-13-4"
     }
    ]
   },
@@ -255,6 +289,23 @@
      "title": "Spaced repetition: re-solve one earlier miss",
      "mins": 15,
      "id": "2026-10-14-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-10-14-3"
+    },
+    {
+     "slot": "home",
+     "kind": "review",
+     "title": "Explain out loud, 3 minutes: Why benchmarks need DoNotOptimize, and what -O2 changes versus -O0",
+     "mins": 15,
+     "detail": "Record yourself on your phone with no notes, then play it back. Knowing something and explaining it under pressure are different skills; interviews test the second.",
+     "id": "2026-10-14-4"
     }
    ]
   },
@@ -289,6 +340,15 @@
      "n": 1,
      "fresh": true,
      "id": "2026-10-15-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Probability: one puzzle, 10 minutes, on paper",
+     "mins": 10,
+     "detail": "Work from Brainstellar, Mosteller's Fifty Challenging Problems or Zhou's guide (keep the books at home). Write the answer before checking.",
+     "link": "https://brainstellar.com",
+     "id": "2026-10-15-3"
     }
    ]
   },
@@ -324,6 +384,15 @@
      "detail": "Also draft how you'll ask your manager for an hour a day of structured learning — raise it at your next 1:1.",
      "link": "https://www.meetup.com/cpplondon/",
      "id": "2026-10-16-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-10-16-3"
     }
    ]
   },
@@ -338,6 +407,15 @@
      "mins": 120,
      "detail": "Keep it private for now. This rig is what everything else in the year stands on.",
      "id": "2026-10-17-0"
+    },
+    {
+     "slot": "weekend",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-10-17-1"
     }
    ]
   },
@@ -370,6 +448,23 @@
      "title": "Weekly review: tick-off rate, hours, what to change next week",
      "mins": 15,
      "id": "2026-10-18-2"
+    },
+    {
+     "slot": "weekend",
+     "kind": "drill",
+     "title": "Probability: one puzzle, 10 minutes, on paper",
+     "mins": 10,
+     "detail": "Work from Brainstellar, Mosteller's Fifty Challenging Problems or Zhou's guide (keep the books at home). Write the answer before checking.",
+     "link": "https://brainstellar.com",
+     "id": "2026-10-18-3"
+    },
+    {
+     "slot": "weekend",
+     "kind": "admin",
+     "title": "Refresh your CV: unclassified one-line descriptions of your defence work, with numbers",
+     "mins": 45,
+     "detail": "Check what you're allowed to say. 'Real-time C++ signal-processing pipeline on Linux' is fine; programme names and capabilities are not.",
+     "id": "2026-10-18-4"
     }
    ]
   },
@@ -402,6 +497,15 @@
      "title": "Review last week's misses; re-solve one from memory",
      "mins": 15,
      "id": "2026-10-19-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-10-19-3"
     }
    ]
   },
@@ -434,6 +538,15 @@
      "title": "Pointer-chasing latency benchmark: random cyclic list over working sets from 4 KB to 256 MB",
      "mins": 45,
      "id": "2026-10-20-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Probability: one puzzle, 10 minutes, on paper",
+     "mins": 10,
+     "detail": "Work from Brainstellar, Mosteller's Fifty Challenging Problems or Zhou's guide (keep the books at home). Write the answer before checking.",
+     "link": "https://brainstellar.com",
+     "id": "2026-10-20-3"
     }
    ]
   },
@@ -467,6 +580,23 @@
      "title": "Spaced repetition: re-solve one earlier miss",
      "mins": 15,
      "id": "2026-10-21-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-10-21-3"
+    },
+    {
+     "slot": "home",
+     "kind": "review",
+     "title": "Explain out loud, 3 minutes: What happens, step by step, on an L1 miss that goes all the way to DRAM",
+     "mins": 15,
+     "detail": "Record yourself on your phone with no notes, then play it back. Knowing something and explaining it under pressure are different skills; interviews test the second.",
+     "id": "2026-10-21-4"
     }
    ]
   },
@@ -501,6 +631,15 @@
      "n": 1,
      "fresh": true,
      "id": "2026-10-22-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Probability: one puzzle, 10 minutes, on paper",
+     "mins": 10,
+     "detail": "Work from Brainstellar, Mosteller's Fifty Challenging Problems or Zhou's guide (keep the books at home). Write the answer before checking.",
+     "link": "https://brainstellar.com",
+     "id": "2026-10-22-3"
     }
    ]
   },
@@ -535,6 +674,15 @@
      "mins": 30,
      "detail": "Note what needs sign-off and who approves it. Do this before you publish anything under your own name.",
      "id": "2026-10-23-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-10-23-3"
     }
    ]
   },
@@ -549,6 +697,23 @@
      "mins": 120,
      "detail": "Explain each result in a sentence. Prefetcher, cache line, page — which one is each curve showing?",
      "id": "2026-10-24-0"
+    },
+    {
+     "slot": "weekend",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-10-24-1"
+    },
+    {
+     "slot": "weekend",
+     "kind": "admin",
+     "title": "Submit 2–3 applications to 2027 graduate programmes from your shortlist",
+     "mins": 30,
+     "detail": "Goal is calibration, not the offer. Online assessments can arrive within days — when one does, swap it in for that day's algorithm block and log what it asked.",
+     "id": "2026-10-24-2"
     }
    ]
   },
@@ -580,6 +745,15 @@
      "title": "Weekly review: tick-off rate, hours, what to change next week",
      "mins": 15,
      "id": "2026-10-25-2"
+    },
+    {
+     "slot": "weekend",
+     "kind": "drill",
+     "title": "Probability: one puzzle, 10 minutes, on paper",
+     "mins": 10,
+     "detail": "Work from Brainstellar, Mosteller's Fifty Challenging Problems or Zhou's guide (keep the books at home). Write the answer before checking.",
+     "link": "https://brainstellar.com",
+     "id": "2026-10-25-3"
     }
    ]
   },
@@ -612,6 +786,15 @@
      "title": "Review last week's misses; re-solve one from memory",
      "mins": 15,
      "id": "2026-10-26-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-10-26-3"
     }
    ]
   },
@@ -644,6 +827,15 @@
      "title": "False sharing: two threads incrementing adjacent counters vs alignas(64) counters",
      "mins": 45,
      "id": "2026-10-27-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Probability: one puzzle, 10 minutes, on paper",
+     "mins": 10,
+     "detail": "Work from Brainstellar, Mosteller's Fifty Challenging Problems or Zhou's guide (keep the books at home). Write the answer before checking.",
+     "link": "https://brainstellar.com",
+     "id": "2026-10-27-3"
     }
    ]
   },
@@ -677,6 +869,23 @@
      "title": "Spaced repetition: re-solve one earlier miss",
      "mins": 15,
      "id": "2026-10-28-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-10-28-3"
+    },
+    {
+     "slot": "home",
+     "kind": "review",
+     "title": "Explain out loud, 3 minutes: False sharing: what it is, how you'd detect it, how you'd fix it",
+     "mins": 15,
+     "detail": "Record yourself on your phone with no notes, then play it back. Knowing something and explaining it under pressure are different skills; interviews test the second.",
+     "id": "2026-10-28-4"
     }
    ]
   },
@@ -711,6 +920,15 @@
      "n": 1,
      "fresh": true,
      "id": "2026-10-29-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Probability: one puzzle, 10 minutes, on paper",
+     "mins": 10,
+     "detail": "Work from Brainstellar, Mosteller's Fifty Challenging Problems or Zhou's guide (keep the books at home). Write the answer before checking.",
+     "link": "https://brainstellar.com",
+     "id": "2026-10-29-3"
     }
    ]
   },
@@ -746,6 +964,15 @@
      "detail": "Firm events are free and the room is full of future interviewers.",
      "link": "https://www.meetup.com/cpplondon/",
      "id": "2026-10-30-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-10-30-3"
     }
    ]
   },
@@ -759,6 +986,15 @@
      "title": "AoS vs SoA: sum one field across 10M structs; vary struct size; measure",
      "mins": 120,
      "id": "2026-10-31-0"
+    },
+    {
+     "slot": "weekend",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-10-31-1"
     }
    ]
   },
@@ -790,6 +1026,23 @@
      "title": "Weekly review: tick-off rate, hours, what to change next week",
      "mins": 15,
      "id": "2026-11-01-2"
+    },
+    {
+     "slot": "weekend",
+     "kind": "drill",
+     "title": "Probability: one puzzle, 10 minutes, on paper",
+     "mins": 10,
+     "detail": "Work from Brainstellar, Mosteller's Fifty Challenging Problems or Zhou's guide (keep the books at home). Write the answer before checking.",
+     "link": "https://brainstellar.com",
+     "id": "2026-11-01-3"
+    },
+    {
+     "slot": "weekend",
+     "kind": "review",
+     "title": "Log any online assessments so far: format, topics, where time ran out",
+     "mins": 15,
+     "detail": "This is the most valuable data you'll get all quarter. Adjust next month's algorithm topics to match.",
+     "id": "2026-11-01-4"
     }
    ]
   },
@@ -822,6 +1075,15 @@
      "title": "Review last week's misses; re-solve one from memory",
      "mins": 15,
      "id": "2026-11-02-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-11-02-3"
     }
    ]
   },
@@ -854,6 +1116,15 @@
      "title": "Branch misprediction: sum values above a threshold, sorted vs unsorted input; perf stat -e branch-misses",
      "mins": 45,
      "id": "2026-11-03-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Probability: one puzzle, 10 minutes, on paper",
+     "mins": 10,
+     "detail": "Work from Brainstellar, Mosteller's Fifty Challenging Problems or Zhou's guide (keep the books at home). Write the answer before checking.",
+     "link": "https://brainstellar.com",
+     "id": "2026-11-03-3"
     }
    ]
   },
@@ -886,6 +1157,23 @@
      "title": "Spaced repetition: re-solve one earlier miss",
      "mins": 15,
      "id": "2026-11-04-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-11-04-3"
+    },
+    {
+     "slot": "home",
+     "kind": "review",
+     "title": "Explain out loud, 3 minutes: Branch prediction, and why sorting the input can make a loop faster",
+     "mins": 15,
+     "detail": "Record yourself on your phone with no notes, then play it back. Knowing something and explaining it under pressure are different skills; interviews test the second.",
+     "id": "2026-11-04-4"
     }
    ]
   },
@@ -920,6 +1208,15 @@
      "n": 1,
      "fresh": true,
      "id": "2026-11-05-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Probability: one puzzle, 10 minutes, on paper",
+     "mins": 10,
+     "detail": "Work from Brainstellar, Mosteller's Fifty Challenging Problems or Zhou's guide (keep the books at home). Write the answer before checking.",
+     "link": "https://brainstellar.com",
+     "id": "2026-11-05-3"
     }
    ]
   },
@@ -955,6 +1252,15 @@
      "detail": "Audio is hard-real-time C++; the crowd overlaps heavily with low-latency people.",
      "link": "https://audio.dev",
      "id": "2026-11-06-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-11-06-3"
     }
    ]
   },
@@ -969,6 +1275,15 @@
      "mins": 120,
      "detail": "Your bench repo or any open-source tool you use.",
      "id": "2026-11-07-0"
+    },
+    {
+     "slot": "weekend",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-11-07-1"
     }
    ]
   },
@@ -1001,6 +1316,15 @@
      "title": "Weekly review: tick-off rate, hours, what to change next week",
      "mins": 15,
      "id": "2026-11-08-2"
+    },
+    {
+     "slot": "weekend",
+     "kind": "drill",
+     "title": "Probability: one puzzle, 10 minutes, on paper",
+     "mins": 10,
+     "detail": "Work from Brainstellar, Mosteller's Fifty Challenging Problems or Zhou's guide (keep the books at home). Write the answer before checking.",
+     "link": "https://brainstellar.com",
+     "id": "2026-11-08-3"
     }
    ]
   },
@@ -1033,6 +1357,15 @@
      "title": "Review last week's misses; re-solve one from memory",
      "mins": 15,
      "id": "2026-11-09-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-11-09-3"
     }
    ]
   },
@@ -1065,6 +1398,15 @@
      "title": "Cost of a syscall, clock_gettime (vDSO) and a context switch (pipe ping-pong)",
      "mins": 45,
      "id": "2026-11-10-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Probability: one puzzle, 10 minutes, on paper",
+     "mins": 10,
+     "detail": "Work from Brainstellar, Mosteller's Fifty Challenging Problems or Zhou's guide (keep the books at home). Write the answer before checking.",
+     "link": "https://brainstellar.com",
+     "id": "2026-11-10-3"
     }
    ]
   },
@@ -1097,6 +1439,23 @@
      "title": "Spaced repetition: re-solve one earlier miss",
      "mins": 15,
      "id": "2026-11-11-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-11-11-3"
+    },
+    {
+     "slot": "home",
+     "kind": "review",
+     "title": "Explain out loud, 3 minutes: Virtual memory and the TLB, and when huge pages help",
+     "mins": 15,
+     "detail": "Record yourself on your phone with no notes, then play it back. Knowing something and explaining it under pressure are different skills; interviews test the second.",
+     "id": "2026-11-11-4"
     }
    ]
   },
@@ -1129,6 +1488,15 @@
      "n": 1,
      "fresh": true,
      "id": "2026-11-12-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Probability: one puzzle, 10 minutes, on paper",
+     "mins": 10,
+     "detail": "Work from Brainstellar, Mosteller's Fifty Challenging Problems or Zhou's guide (keep the books at home). Write the answer before checking.",
+     "link": "https://brainstellar.com",
+     "id": "2026-11-12-3"
     }
    ]
   },
@@ -1162,6 +1530,15 @@
      "mins": 30,
      "link": "https://audio.dev",
      "id": "2026-11-13-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-11-13-3"
     }
    ]
   },
@@ -1176,6 +1553,15 @@
      "mins": 120,
      "detail": "Never report averages for latency. Percentiles only.",
      "id": "2026-11-14-0"
+    },
+    {
+     "slot": "weekend",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-11-14-1"
     }
    ]
   },
@@ -1207,6 +1593,15 @@
      "title": "Weekly review: tick-off rate, hours, what to change next week",
      "mins": 15,
      "id": "2026-11-15-2"
+    },
+    {
+     "slot": "weekend",
+     "kind": "drill",
+     "title": "Probability: one puzzle, 10 minutes, on paper",
+     "mins": 10,
+     "detail": "Work from Brainstellar, Mosteller's Fifty Challenging Problems or Zhou's guide (keep the books at home). Write the answer before checking.",
+     "link": "https://brainstellar.com",
+     "id": "2026-11-15-3"
     }
    ]
   },
@@ -1239,6 +1634,15 @@
      "title": "Review last week's misses; re-solve one from memory",
      "mins": 15,
      "id": "2026-11-16-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-11-16-3"
     }
    ]
   },
@@ -1271,6 +1675,15 @@
      "title": "Design a limit order book on paper: price levels, FIFO queues, cancel-by-id",
      "mins": 45,
      "id": "2026-11-17-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Probability: one puzzle, 10 minutes, on paper",
+     "mins": 10,
+     "detail": "Work from Brainstellar, Mosteller's Fifty Challenging Problems or Zhou's guide (keep the books at home). Write the answer before checking.",
+     "link": "https://brainstellar.com",
+     "id": "2026-11-17-3"
     }
    ]
   },
@@ -1303,6 +1716,23 @@
      "title": "Spaced repetition: re-solve one earlier miss",
      "mins": 15,
      "id": "2026-11-18-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-11-18-3"
+    },
+    {
+     "slot": "home",
+     "kind": "review",
+     "title": "Explain out loud, 3 minutes: std::map vs a flat array of price levels for an order book",
+     "mins": 15,
+     "detail": "Record yourself on your phone with no notes, then play it back. Knowing something and explaining it under pressure are different skills; interviews test the second.",
+     "id": "2026-11-18-4"
     }
    ]
   },
@@ -1337,6 +1767,15 @@
      "n": 1,
      "fresh": true,
      "id": "2026-11-19-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Probability: one puzzle, 10 minutes, on paper",
+     "mins": 10,
+     "detail": "Work from Brainstellar, Mosteller's Fifty Challenging Problems or Zhou's guide (keep the books at home). Write the answer before checking.",
+     "link": "https://brainstellar.com",
+     "id": "2026-11-19-3"
     }
    ]
   },
@@ -1371,6 +1810,15 @@
      "mins": 30,
      "detail": "Specific beats flattering. Never open with a referral request.",
      "id": "2026-11-20-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-11-20-3"
     }
    ]
   },
@@ -1384,6 +1832,15 @@
      "title": "Matching: limit & market orders, price-time priority, partial fills; tests",
      "mins": 120,
      "id": "2026-11-21-0"
+    },
+    {
+     "slot": "weekend",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-11-21-1"
     }
    ]
   },
@@ -1415,6 +1872,15 @@
      "title": "Weekly review: tick-off rate, hours, what to change next week",
      "mins": 15,
      "id": "2026-11-22-2"
+    },
+    {
+     "slot": "weekend",
+     "kind": "drill",
+     "title": "Probability: one puzzle, 10 minutes, on paper",
+     "mins": 10,
+     "detail": "Work from Brainstellar, Mosteller's Fifty Challenging Problems or Zhou's guide (keep the books at home). Write the answer before checking.",
+     "link": "https://brainstellar.com",
+     "id": "2026-11-22-3"
     }
    ]
   },
@@ -1447,6 +1913,15 @@
      "title": "Review last week's misses; re-solve one from memory",
      "mins": 15,
      "id": "2026-11-23-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-11-23-3"
     }
    ]
   },
@@ -1480,6 +1955,15 @@
      "mins": 45,
      "link": "https://colab.research.google.com",
      "id": "2026-11-24-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Probability: one puzzle, 10 minutes, on paper",
+     "mins": 10,
+     "detail": "Work from Brainstellar, Mosteller's Fifty Challenging Problems or Zhou's guide (keep the books at home). Write the answer before checking.",
+     "link": "https://brainstellar.com",
+     "id": "2026-11-24-3"
     }
    ]
   },
@@ -1512,6 +1996,23 @@
      "title": "Spaced repetition: re-solve one earlier miss",
      "mins": 15,
      "id": "2026-11-25-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-11-25-3"
+    },
+    {
+     "slot": "home",
+     "kind": "review",
+     "title": "Explain out loud, 3 minutes: GPU warps, occupancy and memory coalescing",
+     "mins": 15,
+     "detail": "Record yourself on your phone with no notes, then play it back. Knowing something and explaining it under pressure are different skills; interviews test the second.",
+     "id": "2026-11-25-4"
     }
    ]
   },
@@ -1545,6 +2046,15 @@
      "n": 1,
      "fresh": true,
      "id": "2026-11-26-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Probability: one puzzle, 10 minutes, on paper",
+     "mins": 10,
+     "detail": "Work from Brainstellar, Mosteller's Fifty Challenging Problems or Zhou's guide (keep the books at home). Write the answer before checking.",
+     "link": "https://brainstellar.com",
+     "id": "2026-11-26-3"
     }
    ]
   },
@@ -1580,6 +2090,15 @@
      "detail": "Meeting C++ (Berlin) runs 26–28 Nov — talks appear online later.",
      "link": "https://www.gpumode.com",
      "id": "2026-11-27-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-11-27-3"
     }
    ]
   },
@@ -1593,6 +2112,15 @@
      "title": "Tiled shared-memory matmul; GFLOPS vs naive vs cuBLAS for N = 256…4096",
      "mins": 120,
      "id": "2026-11-28-0"
+    },
+    {
+     "slot": "weekend",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-11-28-1"
     }
    ]
   },
@@ -1625,6 +2153,15 @@
      "title": "Weekly review: tick-off rate, hours, what to change next week",
      "mins": 15,
      "id": "2026-11-29-2"
+    },
+    {
+     "slot": "weekend",
+     "kind": "drill",
+     "title": "Probability: one puzzle, 10 minutes, on paper",
+     "mins": 10,
+     "detail": "Work from Brainstellar, Mosteller's Fifty Challenging Problems or Zhou's guide (keep the books at home). Write the answer before checking.",
+     "link": "https://brainstellar.com",
+     "id": "2026-11-29-3"
     }
    ]
   },
@@ -1657,6 +2194,15 @@
      "title": "Review last week's misses; re-solve one from memory",
      "mins": 15,
      "id": "2026-11-30-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-11-30-3"
     }
    ]
   },
@@ -1689,6 +2235,15 @@
      "title": "Implement an SPSC ring buffer with std::atomic acquire/release; tests",
      "mins": 45,
      "id": "2026-12-01-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Probability: one puzzle, 10 minutes, on paper",
+     "mins": 10,
+     "detail": "Work from Brainstellar, Mosteller's Fifty Challenging Problems or Zhou's guide (keep the books at home). Write the answer before checking.",
+     "link": "https://brainstellar.com",
+     "id": "2026-12-01-3"
     }
    ]
   },
@@ -1722,6 +2277,23 @@
      "title": "Spaced repetition: re-solve one earlier miss",
      "mins": 15,
      "id": "2026-12-02-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-12-02-3"
+    },
+    {
+     "slot": "home",
+     "kind": "review",
+     "title": "Explain out loud, 3 minutes: memory_order_acquire and release, using your SPSC ring buffer",
+     "mins": 15,
+     "detail": "Record yourself on your phone with no notes, then play it back. Knowing something and explaining it under pressure are different skills; interviews test the second.",
+     "id": "2026-12-02-4"
     }
    ]
   },
@@ -1755,6 +2327,15 @@
      "n": 1,
      "fresh": true,
      "id": "2026-12-03-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Probability: one puzzle, 10 minutes, on paper",
+     "mins": 10,
+     "detail": "Work from Brainstellar, Mosteller's Fifty Challenging Problems or Zhou's guide (keep the books at home). Write the answer before checking.",
+     "link": "https://brainstellar.com",
+     "id": "2026-12-03-3"
     }
    ]
   },
@@ -1788,6 +2369,15 @@
      "mins": 30,
      "detail": "Working title: 'What my machine actually costs'.",
      "id": "2026-12-04-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-12-04-3"
     }
    ]
   },
@@ -1802,6 +2392,15 @@
      "mins": 120,
      "detail": "Measure after each single change. Write down what each bought.",
      "id": "2026-12-05-0"
+    },
+    {
+     "slot": "weekend",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-12-05-1"
     }
    ]
   },
@@ -1833,6 +2432,15 @@
      "title": "Weekly review: tick-off rate, hours, what to change next week",
      "mins": 15,
      "id": "2026-12-06-2"
+    },
+    {
+     "slot": "weekend",
+     "kind": "drill",
+     "title": "Probability: one puzzle, 10 minutes, on paper",
+     "mins": 10,
+     "detail": "Work from Brainstellar, Mosteller's Fifty Challenging Problems or Zhou's guide (keep the books at home). Write the answer before checking.",
+     "link": "https://brainstellar.com",
+     "id": "2026-12-06-3"
     }
    ]
   },
@@ -1865,6 +2473,15 @@
      "title": "Review last week's misses; re-solve one from memory",
      "mins": 15,
      "id": "2026-12-07-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-12-07-3"
     }
    ]
   },
@@ -1898,6 +2515,15 @@
      "mins": 45,
      "link": "https://godbolt.org",
      "id": "2026-12-08-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Probability: one puzzle, 10 minutes, on paper",
+     "mins": 10,
+     "detail": "Work from Brainstellar, Mosteller's Fifty Challenging Problems or Zhou's guide (keep the books at home). Write the answer before checking.",
+     "link": "https://brainstellar.com",
+     "id": "2026-12-08-3"
     }
    ]
   },
@@ -1931,6 +2557,23 @@
      "title": "Spaced repetition: re-solve one earlier miss",
      "mins": 15,
      "id": "2026-12-09-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-12-09-3"
+    },
+    {
+     "slot": "home",
+     "kind": "review",
+     "title": "Explain out loud, 3 minutes: When the compiler will auto-vectorise a loop, and when it won't",
+     "mins": 15,
+     "detail": "Record yourself on your phone with no notes, then play it back. Knowing something and explaining it under pressure are different skills; interviews test the second.",
+     "id": "2026-12-09-4"
     }
    ]
   },
@@ -1964,6 +2607,15 @@
      "n": 1,
      "fresh": true,
      "id": "2026-12-10-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Probability: one puzzle, 10 minutes, on paper",
+     "mins": 10,
+     "detail": "Work from Brainstellar, Mosteller's Fifty Challenging Problems or Zhou's guide (keep the books at home). Write the answer before checking.",
+     "link": "https://brainstellar.com",
+     "id": "2026-12-10-3"
     }
    ]
   },
@@ -1997,6 +2649,15 @@
      "mins": 30,
      "link": "https://cpponline.uk",
      "id": "2026-12-11-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-12-11-3"
     }
    ]
   },
@@ -2010,6 +2671,15 @@
      "title": "SIMD on a real task: integer parsing or CSV field splitting; report GB/s scalar vs SIMD",
      "mins": 120,
      "id": "2026-12-12-0"
+    },
+    {
+     "slot": "weekend",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-12-12-1"
     }
    ]
   },
@@ -2041,6 +2711,15 @@
      "title": "Weekly review: tick-off rate, hours, what to change next week",
      "mins": 15,
      "id": "2026-12-13-2"
+    },
+    {
+     "slot": "weekend",
+     "kind": "drill",
+     "title": "Probability: one puzzle, 10 minutes, on paper",
+     "mins": 10,
+     "detail": "Work from Brainstellar, Mosteller's Fifty Challenging Problems or Zhou's guide (keep the books at home). Write the answer before checking.",
+     "link": "https://brainstellar.com",
+     "id": "2026-12-13-3"
     }
    ]
   },
@@ -2074,6 +2753,15 @@
      "title": "Review last week's misses; re-solve one from memory",
      "mins": 15,
      "id": "2026-12-14-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-12-14-3"
     }
    ]
   },
@@ -2108,6 +2796,15 @@
      "mins": 45,
      "link": "https://github.com/andikleen/pmu-tools",
      "id": "2026-12-15-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Probability: one puzzle, 10 minutes, on paper",
+     "mins": 10,
+     "detail": "Work from Brainstellar, Mosteller's Fifty Challenging Problems or Zhou's guide (keep the books at home). Write the answer before checking.",
+     "link": "https://brainstellar.com",
+     "id": "2026-12-15-3"
     }
    ]
   },
@@ -2140,6 +2837,23 @@
      "title": "Spaced repetition: re-solve one earlier miss",
      "mins": 15,
      "id": "2026-12-16-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-12-16-3"
+    },
+    {
+     "slot": "home",
+     "kind": "review",
+     "title": "Explain out loud, 3 minutes: How you'd find out why a service got 20% slower",
+     "mins": 15,
+     "detail": "Record yourself on your phone with no notes, then play it back. Knowing something and explaining it under pressure are different skills; interviews test the second.",
+     "id": "2026-12-16-4"
     }
    ]
   },
@@ -2173,6 +2887,15 @@
      "n": 1,
      "fresh": true,
      "id": "2026-12-17-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Probability: one puzzle, 10 minutes, on paper",
+     "mins": 10,
+     "detail": "Work from Brainstellar, Mosteller's Fifty Challenging Problems or Zhou's guide (keep the books at home). Write the answer before checking.",
+     "link": "https://brainstellar.com",
+     "id": "2026-12-17-3"
     }
    ]
   },
@@ -2206,6 +2929,15 @@
      "title": "Second outreach message: one engineer, one specific question",
      "mins": 30,
      "id": "2026-12-18-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-12-18-3"
     }
    ]
   },
@@ -2219,6 +2951,15 @@
      "title": "Draft writeup #1: 'What my machine costs' — latency table, false sharing, branches, TLB",
      "mins": 120,
      "id": "2026-12-19-0"
+    },
+    {
+     "slot": "weekend",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-12-19-1"
     }
    ]
   },
@@ -2250,6 +2991,15 @@
      "title": "Weekly review: tick-off rate, hours, what to change next week",
      "mins": 15,
      "id": "2026-12-20-2"
+    },
+    {
+     "slot": "weekend",
+     "kind": "drill",
+     "title": "Probability: one puzzle, 10 minutes, on paper",
+     "mins": 10,
+     "detail": "Work from Brainstellar, Mosteller's Fifty Challenging Problems or Zhou's guide (keep the books at home). Write the answer before checking.",
+     "link": "https://brainstellar.com",
+     "id": "2026-12-20-3"
     }
    ]
   },
@@ -2283,6 +3033,15 @@
      "title": "Review last week's misses; re-solve one from memory",
      "mins": 15,
      "id": "2026-12-21-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-12-21-3"
     }
    ]
   },
@@ -2309,6 +3068,15 @@
      "n": 1,
      "fresh": true,
      "id": "2026-12-22-1"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Probability: one puzzle, 10 minutes, on paper",
+     "mins": 10,
+     "detail": "Work from Brainstellar, Mosteller's Fifty Challenging Problems or Zhou's guide (keep the books at home). Write the answer before checking.",
+     "link": "https://brainstellar.com",
+     "id": "2026-12-22-2"
     }
    ]
   },
@@ -2323,6 +3091,15 @@
      "mins": 40,
      "detail": "Input only: read, take one page of notes in your own words.",
      "id": "2026-12-23-0"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-12-23-1"
     }
    ]
   },
@@ -2361,6 +3138,15 @@
      "title": "Weekly review: tick-off rate, hours, what to change next week",
      "mins": 15,
      "id": "2026-12-27-1"
+    },
+    {
+     "slot": "weekend",
+     "kind": "drill",
+     "title": "Probability: one puzzle, 10 minutes, on paper",
+     "mins": 10,
+     "detail": "Work from Brainstellar, Mosteller's Fifty Challenging Problems or Zhou's guide (keep the books at home). Write the answer before checking.",
+     "link": "https://brainstellar.com",
+     "id": "2026-12-27-2"
     }
    ]
   },
@@ -2394,6 +3180,15 @@
      "title": "Review last week's misses; re-solve one from memory",
      "mins": 15,
      "id": "2026-12-28-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-12-28-3"
     }
    ]
   },
@@ -2419,6 +3214,15 @@
      "n": 2,
      "fresh": false,
      "id": "2026-12-29-1"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Probability: one puzzle, 10 minutes, on paper",
+     "mins": 10,
+     "detail": "Work from Brainstellar, Mosteller's Fifty Challenging Problems or Zhou's guide (keep the books at home). Write the answer before checking.",
+     "link": "https://brainstellar.com",
+     "id": "2026-12-29-2"
     }
    ]
   },
@@ -2433,6 +3237,23 @@
      "mins": 40,
      "detail": "Input only: read, take one page of notes in your own words.",
      "id": "2026-12-30-0"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2026-12-30-1"
+    },
+    {
+     "slot": "home",
+     "kind": "review",
+     "title": "Explain out loud, 3 minutes: Move semantics and perfect forwarding",
+     "mins": 15,
+     "detail": "Record yourself on your phone with no notes, then play it back. Knowing something and explaining it under pressure are different skills; interviews test the second.",
+     "id": "2026-12-30-2"
     }
    ]
   },
@@ -2457,6 +3278,15 @@
      "n": 1,
      "fresh": false,
      "id": "2026-12-31-1"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Probability: one puzzle, 10 minutes, on paper",
+     "mins": 10,
+     "detail": "Work from Brainstellar, Mosteller's Fifty Challenging Problems or Zhou's guide (keep the books at home). Write the answer before checking.",
+     "link": "https://brainstellar.com",
+     "id": "2026-12-31-2"
     }
    ]
   },
@@ -2477,6 +3307,15 @@
      "mins": 120,
      "detail": "A published thing is worth ten private ones.",
      "id": "2027-01-02-0"
+    },
+    {
+     "slot": "weekend",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2027-01-02-1"
     }
    ]
   },
@@ -2508,6 +3347,15 @@
      "title": "Weekly review: tick-off rate, hours, what to change next week",
      "mins": 15,
      "id": "2027-01-03-2"
+    },
+    {
+     "slot": "weekend",
+     "kind": "drill",
+     "title": "Probability: one puzzle, 10 minutes, on paper",
+     "mins": 10,
+     "detail": "Work from Brainstellar, Mosteller's Fifty Challenging Problems or Zhou's guide (keep the books at home). Write the answer before checking.",
+     "link": "https://brainstellar.com",
+     "id": "2027-01-03-3"
     }
    ]
   },
@@ -2540,6 +3388,15 @@
      "title": "Review last week's misses; re-solve one from memory",
      "mins": 15,
      "id": "2027-01-04-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2027-01-04-3"
     }
    ]
   },
@@ -2573,6 +3430,15 @@
      "title": "Timed mock: 2 medium problems in 50 minutes, talking out loud",
      "mins": 45,
      "id": "2027-01-05-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Probability: one puzzle, 10 minutes, on paper",
+     "mins": 10,
+     "detail": "Work from Brainstellar, Mosteller's Fifty Challenging Problems or Zhou's guide (keep the books at home). Write the answer before checking.",
+     "link": "https://brainstellar.com",
+     "id": "2027-01-05-3"
     }
    ]
   },
@@ -2605,6 +3471,23 @@
      "title": "Spaced repetition: re-solve one earlier miss",
      "mins": 15,
      "id": "2027-01-06-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2027-01-06-3"
+    },
+    {
+     "slot": "home",
+     "kind": "review",
+     "title": "Explain out loud, 3 minutes: The cost of virtual dispatch, and the alternatives",
+     "mins": 15,
+     "detail": "Record yourself on your phone with no notes, then play it back. Knowing something and explaining it under pressure are different skills; interviews test the second.",
+     "id": "2027-01-06-4"
     }
    ]
   },
@@ -2637,6 +3520,15 @@
      "n": 1,
      "fresh": true,
      "id": "2027-01-07-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Probability: one puzzle, 10 minutes, on paper",
+     "mins": 10,
+     "detail": "Work from Brainstellar, Mosteller's Fifty Challenging Problems or Zhou's guide (keep the books at home). Write the answer before checking.",
+     "link": "https://brainstellar.com",
+     "id": "2027-01-07-3"
     }
    ]
   },
@@ -2670,6 +3562,15 @@
      "mins": 30,
      "link": "https://cpponline.uk",
      "id": "2027-01-08-2"
+    },
+    {
+     "slot": "home",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2027-01-08-3"
     }
    ]
   },
@@ -2679,10 +3580,20 @@
    "tasks": [
     {
      "slot": "weekend",
-     "kind": "build",
-     "title": "Checkpoint: problems solved, numbers table, writeup, enjoyment scores — write one honest page",
+     "kind": "review",
+     "title": "CHECKPOINT: score yourself against the four gates — pass or fail",
      "mins": 120,
+     "detail": "Pass/fail gate — be honest. Pass if you hit at least 3 of 4: (1) 80+ new problems solved; (2) the timed mock this week: 2 mediums solved in 50 minutes; (3) mental-arithmetic scores clearly rising since October (aim for 40+ on Zetamac's default test); (4) numbers table complete and writeup #1 published or drafted. Fail → next quarter shifts hours from reading and building to whichever gate you missed.",
      "id": "2027-01-09-0"
+    },
+    {
+     "slot": "weekend",
+     "kind": "drill",
+     "title": "Mental arithmetic: 10 minutes, log your score",
+     "mins": 10,
+     "detail": "Zetamac default settings, 120-second rounds. Write the score down — it's one of your checkpoint gates. Trading firms test this and it can't be crammed.",
+     "link": "https://arithmetic.zetamac.com",
+     "id": "2027-01-09-1"
     }
    ]
   },
@@ -2714,6 +3625,15 @@
      "title": "Weekly review: tick-off rate, hours, what to change next week",
      "mins": 15,
      "id": "2027-01-10-2"
+    },
+    {
+     "slot": "weekend",
+     "kind": "drill",
+     "title": "Probability: one puzzle, 10 minutes, on paper",
+     "mins": 10,
+     "detail": "Work from Brainstellar, Mosteller's Fifty Challenging Problems or Zhou's guide (keep the books at home). Write the answer before checking.",
+     "link": "https://brainstellar.com",
+     "id": "2027-01-10-3"
     }
    ]
   }
