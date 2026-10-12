@@ -18,6 +18,14 @@ module.exports = async ({ github, context, core }) => {
   const site = `https://${owner}.github.io/${repo}/`;
   const LABEL = "daily";
 
+  // The workflow runs several times each morning in case GitHub skips one; only the first run does anything.
+  const marker = `<!-- roadmap-day:${today} -->`;
+  const recent = await github.rest.issues.listForRepo({ owner, repo, state: "all", labels: LABEL, per_page: 5 });
+  if (recent.data.some((i) => (i.body || "").includes(marker))) {
+    core.notice(`Reminder for ${today} already sent.`);
+    return;
+  }
+
   // Close previous reminders.
   const open = await github.paginate(github.rest.issues.listForRepo, { owner, repo, state: "open", labels: LABEL, per_page: 100 });
   for (const i of open) {
@@ -56,6 +64,7 @@ module.exports = async ({ github, context, core }) => {
     }
     lines.push(`About ${(total / 60).toFixed(1).replace(/\.0$/, "")}h in total.`);
   }
+  lines.push("", marker);
   lines.push("", `**[Open today on the roadmap →](${site}#/day/${today})** Tick things off there; this issue closes itself tomorrow.`);
 
   try { await github.rest.issues.getLabel({ owner, repo, name: LABEL }); }

@@ -2,9 +2,11 @@ name: Daily reminder
 
 on:
   schedule:
-    # 06:12 UTC = 07:12 in summer (BST), 06:12 in winter (GMT).
-    # GitHub may run scheduled jobs a few minutes late.
-    - cron: "12 6 * * *"
+    # GitHub's scheduler is best-effort (runs can be late or skipped), so try three times.
+    # The script sends at most one reminder per day. UK times: BST = UTC+1, GMT = UTC.
+    - cron: "41 4 * * *"   # 05:41 BST / 04:41 GMT
+    - cron: "19 5 * * *"   # 06:19 BST / 05:19 GMT
+    - cron: "53 5 * * *"   # 06:53 BST / 05:53 GMT
   workflow_dispatch:
     inputs:
       date:
